@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "welcome-web";
+  src: url("../fonts/welcome-font-bold.eot");
+  src: url("../fonts/welcome-font-bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/welcome-font-bold.woff2") format("woff2"),
+    url("../fonts/welcome-font-bold.woff") format("woff"),
+    url("../fonts/welcome-font-bold.ttf") format("truetype"),
+    url("../fonts/welcome-font-bold.svg#welcome-font-bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-Regular.eot");
+  src: url("../fonts/WorkSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/WorkSans-Regular.woff2") format("woff2"),
+    url("../fonts/WorkSans-Regular.woff") format("woff"),
+    url("../fonts/WorkSans-Regular.ttf") format("truetype"),
+    url("../fonts/WorkSans-Regular.svg#WorkSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 100px;
+}
+body {
+  font-family: "Work Sans", serif;
+}
+header,
+footer {
+  display: flex;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: white;
+  border-bottom: 1px solid #e9e9e9;
+  width: 100%;
+}
+.header-content {
+  width: calc(100% - 1.5rem);
+  max-width: 75rem;
+  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-header {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+.right-header {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+header img {
+  width: 140px;
+  margin-right: 50px;
+}
+header nav {
+  flex: 1;
+}
+header .nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -0.019rem;
+  margin-right: 30px;
+}
+header .nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #ffcd00;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 5px;
+}
+header .first {
+  text-decoration: underline;
+  text-decoration-color: #ffcd00;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 5px;
+}
+button {
+  font-family: "Work Sans", serif;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+}
+.nav-btn-yellow {
+  padding: 8px 15px;
+  border: 1px solid #ffcd00;
+  background-color: #ffcd00;
+}
+.nav-btn-yellow:hover {
+  border: 1px solid #ffe062;
+  background-color: #ffe062;
+}
+header .nav-btn-white {
+  border: 1px solid black;
+  background-color: white;
+  margin-right: 10px;
+}
+header .nav-btn-white:hover {
+  background-color: #e9ecef;
+}
+
+main .hero-section {
+  background-color: #ffcd00;
+}
+main .hero-section-content {
+  width: calc(100% - 1.5rem);
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .hero-section-title {
+  flex: 1;
+}
+main .hero-section-title h1 {
+  font-family: "welcome-web", sans-serif;
+  font-weight: 600;
+  font-size: 2.7rem;
+  letter-spacing: -0.075rem;
+}
+main .hero-section-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+main .hero-section-buttons .button {
+  font-family: "welcome-web", sans-serif;
+  width: 450px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+main .hero-section-buttons .button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+main .hero-section-buttons .btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .hero-section-buttons .icon {
+  height: 15px;
+}
+main .bottom-section {
+  background-color: #efeae4;
+}
+main .journey-block {
+  height: 850px;
+  padding: 50px 0;
+  position: relative;
+}
+main h2 {
+  font-family: "welcome-web", serif;
+  font-size: 2rem;
+  letter-spacing: -0.06rem;
+  font-weight: bold;
+  text-align: center;
+}
+main .journey-block .line {
+  width: 5px;
+  height: 500px;
+  background: #000;
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 2.5px);
+}
+main .journey-block .point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: calc(50% - 10px);
+}
+.p1 {
+  top: 150px;
+}
+.p2 {
+  top: 310px;
+}
+.p3 {
+  top: 470px;
+}
+.p4 {
+  top: 630px;
+}
+main .journey-block .box {
+  width: 400px;
+  min-height: 100px;
+  max-height: 300px;
+  border: 1px solid black;
+  background: white;
+  box-shadow: 3px 5px 5px #999;
+  position: absolute;
+  padding: 20px;
+}
+.b1 {
+  left: calc(50% - 450px);
+  top: 150px;
+}
+.b2 {
+  left: calc(50% + 50px);
+  top: 310px;
+}
+.b3 {
+  left: calc(50% - 450px);
+  top: 470px;
+}
+.b4 {
+  left: calc(50% + 50px);
+  top: 630px;
+}
+main .journey-block .box h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+main .skills {
+  width: 100%;
+}
+main .skills-content {
+  width: calc(100% - 1.5rem);
+  max-width: 75rem;
+  margin: 0 auto;
+}
+main .skills-list {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main .skill-logo img {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  object-fit: contain;
+  transition: all 0.2s ease-in-out;
+}
+main .skill-logo img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+main.projects {
+  width: 100%;
+}
+main .projects .projects-nav {
+  padding: 80px 0 10px 0;
+}
+main .projects .projects-nav a {
+  color: #474644;
+  font-family: "Work Sans", serif;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+main .projects .projects-line {
+  height: 1px;
+  width: 100%;
+  background: #d7d2cd;
+  margin-bottom: 20px;
+  position: relative;
+}
+main .projects .projects-line span {
+  height: 2px;
+  width: 100px;
+  position: absolute;
+  background-color: #ffcd00;
+}
+main .projects .projects-content {
+  width: calc(100% - 1.5rem);
+  max-width: 75rem;
+  margin: 0 auto;
+}
+main .projects .projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+main .projects .project-card {
+  height: 460px;
+  width: calc(33% - 10px);
+  background: white;
+}
+main .projects .to-continue {
+  background-color: black;
+  color: white;
+}
+main .projects .card-img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+main .projects .card-img img {
+  width: 100%;
+}
+
+main .to-continue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .to-continue h4 {
+  font-family: "welcome-web";
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 40px;
+  text-align: center;
+}
+footer {
+  color: white;
+  background-color: black;
+}
+footer .footer-content {
+  width: calc(100% - 1.5rem);
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+footer img {
+  width: 200px;
+}
