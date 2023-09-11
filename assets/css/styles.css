@@ -121,6 +121,7 @@ header .nav-btn-white:hover {
 
 main .hero-section {
   background-color: #ffcd00;
+  padding: 20px 0;
 }
 main .hero-section-content {
   width: calc(100% - 1.5rem);
@@ -176,7 +177,7 @@ main .bottom-section {
   background-color: #efeae4;
 }
 main .journey-block {
-  height: 1100px;
+  height: 1250px;
   padding: 50px 0;
   position: relative;
 }
@@ -250,6 +251,7 @@ main .journey-block .box {
 }
 main .journey-block .box .head {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 main .journey-block .box h3 {
@@ -257,13 +259,19 @@ main .journey-block .box h3 {
   padding-right: 50px;
 }
 main .journey-block .box .logo {
-  width: 40px;
+  height: 20px;
+}
+main .journey-block .b5 span {
+  font-style: italic;
+  font-size: small;
 }
 main .journey-block .box p {
   margin-bottom: 20px;
 }
 main .skills {
   width: 100%;
+  background: white;
+  padding: 60px 0;
 }
 main .skills-content {
   width: calc(100% - 1.5rem);
@@ -290,8 +298,9 @@ main .skill-logo img:hover {
   transform: scale(1.1);
   filter: brightness(1.1);
 }
-main.projects {
+main .projects {
   width: 100%;
+  padding: 60px 0;
 }
 main .projects .projects-nav {
   padding: 80px 0 10px 0;
@@ -312,10 +321,11 @@ main .projects .projects-line {
 }
 main .projects .projects-line span {
   height: 2px;
-  width: 70px;
+  width: 90px;
   position: absolute;
   background-color: #ffcd00;
 }
+
 main .projects .projects-content {
   width: calc(100% - 1.5rem);
   max-width: 75rem;
@@ -363,6 +373,7 @@ main .to-continue h4 {
   text-align: center;
 }
 main .contact {
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,7 +396,7 @@ main .contact div {
 footer {
   color: white;
   background-color: black;
-  height: 500px;
+  height: 200px;
 }
 footer .footer-content {
   width: calc(100% - 1.5rem);
