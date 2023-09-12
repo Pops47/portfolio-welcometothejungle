@@ -127,7 +127,7 @@ main .hero-section-content {
   width: calc(100% - 1.5rem);
   max-width: 75rem;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,8 +177,8 @@ main .bottom-section {
   background-color: #efeae4;
 }
 main .journey-block {
-  height: 1250px;
-  padding: 50px 0;
+  height: 1580px;
+  padding: 40px 0;
   position: relative;
 }
 main h2 {
@@ -190,7 +190,7 @@ main h2 {
 }
 main .journey-block .line {
   width: 5px;
-  height: 800px;
+  height: 1150px;
   background: #000;
   position: absolute;
   top: 150px;
@@ -208,51 +208,58 @@ main .journey-block .point {
   top: 150px;
 }
 .p2 {
-  top: 350px;
+  top: 400px;
 }
 .p3 {
-  top: 550px;
+  top: 700px;
 }
 .p4 {
-  top: 750px;
+  top: 1000px;
 }
 .p5 {
-  top: 950px;
+  top: 1300px;
 }
 main .journey-block .box {
-  width: 400px;
+  width: 420px;
   min-height: 100px;
-  max-height: 300px;
+  max-height: 350px;
   border: 1px solid black;
   background: white;
   box-shadow: 3px 5px 5px #999;
   position: absolute;
-  padding: 20px;
+  padding: 15px 25px;
+  opacity: 0.2;
 }
 .b1 {
-  left: calc(50% - 450px);
+  left: calc(50% - 470px);
   top: 150px;
 }
 .b2 {
   left: calc(50% + 50px);
-  top: 350px;
+  top: 400px;
 }
 .b3 {
-  left: calc(50% - 450px);
-  top: 550px;
+  left: calc(50% - 470px);
+  top: 700px;
 }
 .b4 {
   left: calc(50% + 50px);
-  top: 750px;
+  top: 1000px;
 }
 .b5 {
-  left: calc(50% - 450px);
-  top: 950px;
+  left: calc(50% - 470px);
+  top: 1300px;
 }
 main .journey-block .box .head {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+main .journey-block .box .head a {
+  text-decoration: none;
+}
+main .journey-block .box a {
+  color: black;
 }
 main .journey-block .box h3 {
   font-weight: 600;
@@ -268,10 +275,16 @@ main .journey-block .b5 span {
 main .journey-block .box p {
   margin-bottom: 20px;
 }
+main .journey-block .box li {
+  margin-bottom: 10px;
+}
+main .journey-block .box span {
+  font-weight: bold;
+}
 main .skills {
   width: 100%;
   background: white;
-  padding: 60px 0;
+  padding: 60px 0 40px 0;
 }
 main .skills-content {
   width: calc(100% - 1.5rem);
@@ -287,8 +300,8 @@ main .skills-list {
 }
 
 main .skill-logo img {
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   border-radius: 15px;
   object-fit: contain;
   transition: all 0.2s ease-in-out;
@@ -300,7 +313,7 @@ main .skill-logo img:hover {
 }
 main .projects {
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 0 20px 0;
 }
 main .projects .projects-nav {
   padding: 80px 0 10px 0;
@@ -342,13 +355,19 @@ main .projects .project-card {
   height: 460px;
   width: calc(33% - 10px);
   background: white;
+  display: flex;
+  flex-direction: column;
 }
+
+/* main .projects .portfolio-card .card-img {
+  background: #ffcd00;
+} */
 main .projects .to-continue {
   background-color: black;
   color: white;
 }
 main .projects .card-img {
-  height: 150px;
+  height: 35%;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
@@ -358,7 +377,43 @@ main .projects .card-img {
 main .projects .card-img img {
   width: 100%;
 }
+main .projects .card-bottom {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 20px 20px 20px;
+}
+main .projects .project-card .card-bottom h4 {
+  font-family: "welcome-web", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: large;
+}
+main .projects .project-card .card-bottom li {
+  margin-bottom: 10px;
+}
+main .projects .card-bottom .link {
+  display: flex;
+  justify-content: space-between;
+}
+main .projects .card-bottom .link p {
+  font-weight: bold;
+  font-size: small;
+}
+main .projects .card-bottom .link a {
+  border: black solid 1px;
+  padding: 8px 15px;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+}
 
+main .projects .card-bottom .link a:hover {
+  background-color: #e9ecef;
+}
 main .to-continue {
   display: flex;
   flex-direction: column;
