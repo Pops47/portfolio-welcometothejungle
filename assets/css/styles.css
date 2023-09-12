@@ -258,6 +258,9 @@ main .journey-block .box .head {
 main .journey-block .box .head a {
   text-decoration: none;
 }
+main .journey-block .box .head span {
+  font-weight: bold;
+}
 main .journey-block .box a {
   color: black;
 }
