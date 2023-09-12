@@ -407,6 +407,7 @@ main .projects .project-card .card-bottom li {
 main .projects .card-bottom .link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 main .projects .card-bottom .link p {
   font-weight: bold;
@@ -420,10 +421,10 @@ main .projects .card-bottom .link a {
   font-weight: bold;
   text-decoration: none;
 }
-main .projects .card-bottom .link a:hover span {
+main .projects .card-bottom .link .symbiose:hover span {
   display: none;
 }
-main .projects .card-bottom .link a:hover:after {
+main .projects .card-bottom .link .symbiose:hover:after {
   content: " on demand";
 }
 main .projects .card-bottom .link a:hover {
