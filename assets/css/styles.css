@@ -394,8 +394,15 @@ main .projects .project-card .card-bottom h4 {
   font-weight: bold;
   font-size: large;
 }
+main .projects .project-card .card-bottom img {
+  width: 15px;
+  margin-right: 10px;
+}
 main .projects .project-card .card-bottom li {
   margin-bottom: 10px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
 }
 main .projects .card-bottom .link {
   display: flex;
@@ -413,7 +420,12 @@ main .projects .card-bottom .link a {
   font-weight: bold;
   text-decoration: none;
 }
-
+main .projects .card-bottom .link a:hover span {
+  display: none;
+}
+main .projects .card-bottom .link a:hover:after {
+  content: " on demand";
+}
 main .projects .card-bottom .link a:hover {
   background-color: #e9ecef;
 }
