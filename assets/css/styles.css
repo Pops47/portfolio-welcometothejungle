@@ -172,38 +172,6 @@ header .nav-btn-white {
 header .nav-btn-white:hover {
   background-color: #e9ecef;
 }
-
-@media (max-width: 950px) {
-  header .header-content {
-    align-items: flex-start;
-  }
-  header .header-content {
-    flex-direction: column;
-  }
-  header .top-header {
-    width: 100%;
-  }
-  header .burger-menu {
-    display: inline;
-  }
-  header .mini-logo {
-    display: inline;
-  }
-  header .contact-logo {
-    display: inline;
-  }
-  header .logo {
-    display: none;
-  }
-
-  header .left-header {
-    display: none;
-  }
-  header .right-header {
-    display: none;
-  }
-}
-
 main .hero-section {
   background-color: #ffcd00;
   padding: 20px 0;
@@ -257,6 +225,47 @@ main .hero-section-buttons .btn-content {
 }
 main .hero-section-buttons .icon {
   height: 15px;
+}
+@media (max-width: 950px) {
+  header .header-content {
+    align-items: flex-start;
+  }
+  header .header-content {
+    flex-direction: column;
+  }
+  header .top-header {
+    width: 100%;
+  }
+  header .burger-menu {
+    display: inline;
+  }
+  header .mini-logo {
+    display: inline;
+  }
+  header .contact-logo {
+    display: inline;
+  }
+  header .logo {
+    display: none;
+  }
+  header .left-header {
+    display: none;
+  }
+  header .right-header {
+    display: none;
+  }
+  main .hero-section-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .hero-section-title h1 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+  }
+  main .hero-section-buttons .button {
+    width: 400px;
+    font-size: 1rem;
+  }
 }
 main .bottom-section {
   background-color: #efeae4;
