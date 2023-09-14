@@ -56,10 +56,16 @@ header {
   justify-content: space-between;
 }
 header .burger-menu {
+  border-radius: 50%;
+  padding: 7px;
   display: none;
 }
 header .burger-menu img {
   width: 20px;
+}
+header .burger-menu:hover {
+  cursor: pointer;
+  background-color: #e9ecef;
 }
 header .mini-logo {
   width: 80px;
@@ -69,7 +75,15 @@ header .mini-logo img {
   width: 90px;
 }
 header .contact-logo {
+  border-radius: 50%;
+  padding: 7px;
   display: none;
+}
+header .contact-logo:hover {
+  background-color: #e9ecef;
+}
+header .contact-logo img {
+  width: 20px;
 }
 header .left-header {
   display: flex;
@@ -83,21 +97,21 @@ header .left-header .logo img {
 header .left-header nav {
   flex: 1;
 }
-header .nav-link {
+header .left-header .nav-link {
   color: black;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: -0.019rem;
   margin-right: 30px;
 }
-header .nav-link:hover {
+header .left-header .nav-link:hover {
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: #ffcd00;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 5px;
 }
-header .first {
+header .left-header .first {
   text-decoration: underline;
   text-decoration-color: #ffcd00;
   text-decoration-thickness: 1.5px;
