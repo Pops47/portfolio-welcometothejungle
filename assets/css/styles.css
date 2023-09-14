@@ -226,76 +226,7 @@ main .hero-section-buttons .btn-content {
 main .hero-section-buttons .icon {
   height: 15px;
 }
-@media (max-width: 950px) {
-  header .header-content {
-    align-items: flex-start;
-  }
-  header .header-content {
-    flex-direction: column;
-  }
-  header .top-header {
-    width: 100%;
-  }
-  header .burger-menu {
-    display: inline;
-  }
-  header .mini-logo {
-    display: inline;
-  }
-  header .contact-logo {
-    display: inline;
-  }
-  header .logo {
-    display: none;
-  }
-  header .left-header {
-    display: none;
-  }
-  header .right-header {
-    display: none;
-  }
-  main .hero-section-content {
-    flex-direction: column;
-    justify-content: center;
-  }
-  main .hero-section-title h1 {
-    font-size: 1.6rem;
-    margin-bottom: 40px;
-  }
-  main .hero-section-buttons .button {
-    width: 400px;
-    font-size: 1rem;
-  }
-  main .journey-block .box {
-    width: 380px !important;
-  }
-  main .journey-block .b1 {
-    left: calc(50% - 190px);
-    top: 150px;
-  }
-  main .journey-block .b2 {
-    left: calc(50% - 190px);
-    top: 450px;
-  }
-  main .journey-block .b3 {
-    left: calc(50% - 190px);
-    top: 785px;
-  }
-  main .journey-block .b4 {
-    left: calc(50% - 190px);
-    top: 1120px;
-  }
-  main .journey-block .b5 {
-    left: calc(50% - 190px);
-    top: 1425px;
-  }
-  main .journey-block .line {
-    height: 1400px !important;
-  }
-  main .journey-block {
-    height: 1700px !important;
-  }
-}
+
 main .bottom-section {
   background-color: #efeae4;
 }
@@ -418,13 +349,12 @@ main .skills-content {
   margin: 0 auto;
 }
 main .skills-list {
-  padding: 80px 0;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 main .skill-logo img {
   height: 130px;
   width: 130px;
@@ -442,7 +372,7 @@ main .projects {
   padding: 60px 0 20px 0;
 }
 main .projects .projects-nav {
-  padding: 80px 0 10px 0;
+  padding: 60px 0 10px 0;
 }
 main .projects .projects-nav a {
   color: #474644;
@@ -483,6 +413,7 @@ main .projects .projects-grid {
 main .projects .project-card {
   height: 460px;
   width: calc(33% - 10px);
+  min-width: 350px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -615,4 +546,92 @@ footer .footer-content {
 }
 footer img {
   width: 200px;
+}
+
+@media (max-width: 950px) {
+  header .header-content {
+    align-items: flex-start;
+  }
+  header .header-content {
+    flex-direction: column;
+  }
+  header .top-header {
+    width: 100%;
+  }
+  header .burger-menu {
+    display: inline;
+  }
+  header .mini-logo {
+    display: inline;
+  }
+  header .contact-logo {
+    display: inline;
+  }
+  header .logo {
+    display: none;
+  }
+  header .left-header {
+    display: none;
+  }
+  header .right-header {
+    display: none;
+  }
+  main .hero-section-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .hero-section-title h1 {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+  }
+  main .hero-section-buttons .button {
+    width: 400px;
+    font-size: 1rem;
+  }
+  main .journey-block .box {
+    width: 380px !important;
+  }
+  main .journey-block .b1 {
+    left: calc(50% - 190px);
+    top: 150px;
+  }
+  main .journey-block .b2 {
+    left: calc(50% - 190px);
+    top: 450px;
+  }
+  main .journey-block .b3 {
+    left: calc(50% - 190px);
+    top: 785px;
+  }
+  main .journey-block .b4 {
+    left: calc(50% - 190px);
+    top: 1120px;
+  }
+  main .journey-block .b5 {
+    left: calc(50% - 190px);
+    top: 1425px;
+  }
+  main .journey-block .line {
+    height: 1400px !important;
+  }
+  main .journey-block .point {
+    display: none;
+  }
+  main .journey-block {
+    height: 1700px !important;
+  }
+  main .skills {
+  }
+  main .projects-nav {
+    font-size: 0.75rem;
+  }
+  main .projects .projects-line span {
+    width: 60px;
+  }
+  footer .footer-content {
+    flex-direction: column;
+  }
+  footer img {
+    margin-bottom: 20px;
+  }
 }
