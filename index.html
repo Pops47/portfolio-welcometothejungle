@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <title>
       Portfolio - Pauline Soubrié - Web Developer - JavaScript / React.js /
-      Node.js /
+      Node.js / MongoDB
     </title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -15,6 +15,21 @@
   <body>
     <header>
       <div class="header-content">
+
+        <div class="burger-menu"><img src="./assets/img/icons/menu-bar.png" alt="menu"></div>
+        <div class="mini-logo"><a href="#home"
+          ><img
+            class="logo-img"
+            src="./assets/img/welcome-logo.png"
+            alt="logo 'welcome to My Portfolio"
+        /></a></div>
+        <div class="contact-logo"><a href="#contact"
+          ><img
+            src=""
+            alt="C"
+        /></a></div>
+
+
         <div class="left-header">
           <div class="logo">
             <a href="#home"
@@ -134,12 +149,11 @@
             </p>
             <ul>
               <li>
-                <span>TheArenaProject :</span> Shell, Algorithmy and Data
-                Structures
+                <span>TheArenaProject :</span> Shell, File system, Algorithmy
+                and Data Structures
               </li>
               <li>
-                <span>L'école du Web, parcours frontend :</span> Javascript,
-                React, Vue, Tailwind
+                <span>'L'école du Web' :</span> Javascript, React, Vue, Tailwind
               </li>
               <li><span>NextReact :</span> Typescript, Next.JS, testing</li>
             </ul>
@@ -294,7 +308,7 @@
           <div class="projects-content">
             <h2 id="work">My favorite projects</h2>
             <nav class="projects-nav">
-              <a class="projects-nav" href="#projects">All projects</a>
+              <a class="projects-nav" href="#work">All projects</a>
               <a class="projects-nav marvel" href="">Marvel</a>
               <a class="projects-nav vinted" href="">Vinted</a>
               <a class="projects-nav tellmemore" href="">TellMeMore</a>
@@ -302,7 +316,7 @@
               <a class="projects-nav portfolio" href="">Portfolio</a>
             </nav>
 
-            <div class="projects-line"><span></span></div>
+            <div class="projects-line"><span id="line"><span></div>
             <div class="projects-grid">
               <div class="project-card marvel-card">
                 <div class="card-img">
@@ -511,7 +525,7 @@
               </div>
               <div class="project-card to-continue">
                 <p>To be continued ...</p>
-                <h4>Entrust me with a new project</h4>
+                <h4>What's your next project ?</h4>
                 <a href="#contact"
                   ><button class="nav-btn-yellow">Contact me</button></a
                 >
