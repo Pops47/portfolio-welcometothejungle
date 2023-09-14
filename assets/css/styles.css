@@ -266,6 +266,35 @@ main .hero-section-buttons .icon {
     width: 400px;
     font-size: 1rem;
   }
+  main .journey-block .box {
+    width: 380px !important;
+  }
+  main .journey-block .b1 {
+    left: calc(50% - 190px);
+    top: 150px;
+  }
+  main .journey-block .b2 {
+    left: calc(50% - 190px);
+    top: 450px;
+  }
+  main .journey-block .b3 {
+    left: calc(50% - 190px);
+    top: 785px;
+  }
+  main .journey-block .b4 {
+    left: calc(50% - 190px);
+    top: 1120px;
+  }
+  main .journey-block .b5 {
+    left: calc(50% - 190px);
+    top: 1425px;
+  }
+  main .journey-block .line {
+    height: 1400px !important;
+  }
+  main .journey-block {
+    height: 1700px !important;
+  }
 }
 main .bottom-section {
   background-color: #efeae4;
