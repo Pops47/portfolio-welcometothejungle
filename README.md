@@ -10,3 +10,5 @@ Avancée de mes projets :
   - Vinted : MAJ en cours (responsive, panier, stripe)
   - TellMeMore : Maj en cours (responsive, custom color/image/order)
   - Symbiose : terminé (privé - github sur demande)
+
+C'est par [ici](https://deft-entremet-bff3c5.netlify.app/)
