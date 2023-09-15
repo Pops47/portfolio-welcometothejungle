@@ -59,6 +59,8 @@ header .burger-menu {
   border-radius: 50%;
   padding: 7px;
   display: none;
+  visibility: hidden;
+  position: absolute;
 }
 header .burger-menu img {
   width: 20px;
@@ -567,7 +569,9 @@ footer img {
     width: 100%;
   }
   header .burger-menu {
-    display: inline !important;
+    display: inline;
+    visibility: visible;
+    position: relative;
   }
   header .close-burger-menu {
     display: none;
