@@ -382,7 +382,7 @@ main .projects .projects-nav a {
   margin-right: 0.5rem;
 }
 main .projects .projects-nav a:hover {
-  cursor: default;
+  cursor: pointer;
 }
 main .projects .projects-line {
   height: 1px;
@@ -418,10 +418,6 @@ main .projects .project-card {
   display: flex;
   flex-direction: column;
 }
-
-/* main .projects .portfolio-card .card-img {
-  background: #ffcd00;
-} */
 main .projects .to-continue {
   background-color: black;
   color: white;
@@ -620,7 +616,8 @@ footer img {
   main .journey-block {
     height: 1700px !important;
   }
-  main .skills {
+  main .skill-logo img {
+    width: 100px;
   }
   main .projects-nav {
     font-size: 0.75rem;
@@ -633,5 +630,10 @@ footer img {
   }
   footer img {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  main .journey-block .box {
+    width: 340px !important;
   }
 }
