@@ -586,6 +586,7 @@ footer img {
   }
   main .journey-block .box {
     width: 380px !important;
+    opacity: 1 !important;
   }
   main .journey-block .b1 {
     left: calc(50% - 190px);
