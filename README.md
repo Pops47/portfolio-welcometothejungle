@@ -11,4 +11,4 @@ Avancée de mes projets :
   - TellMeMore : Maj en cours (responsive, custom color/image/order)
   - Symbiose : terminé (privé - github sur demande)
 
-C'est par [ici](https://deft-entremet-bff3c5.netlify.app/)
+C'est par [ici](https://pauline-soubrie.netlify.app/)
