@@ -7,7 +7,8 @@ Vous pourrez y télécharger mon CV, consulter mes projets et me contacter.
 
 Avancée de mes projets :
   - Marvel : terminé
-  - Vinted : MAJ en cours (responsive, panier, stripe)
+  - Vinted : terminé
+  - Portfolio : terminé
   - TellMeMore : Maj en cours (responsive, custom color/image/order)
   - Symbiose : terminé (privé - github sur demande)
 
