@@ -245,9 +245,9 @@ main .bottom-section {
   background-color: #efeae4;
 }
 main .journey-block {
-  height: 1580px;
   padding: 40px 0;
   position: relative;
+  height: 2000px;
 }
 main h2 {
   font-family: "welcome-web", serif;
@@ -258,7 +258,7 @@ main h2 {
 }
 main .journey-block .line {
   width: 5px;
-  height: 1150px;
+  height: 1450px;
   background: #000;
   position: absolute;
   top: 150px;
@@ -286,6 +286,9 @@ main .journey-block .point {
 }
 .p5 {
   top: 1300px;
+}
+.p6 {
+  top: 1600px;
 }
 main .journey-block .box {
   width: 420px;
@@ -317,6 +320,10 @@ main .journey-block .box {
 .b5 {
   left: calc(50% - 470px);
   top: 1300px;
+}
+.b6 {
+  left: calc(50% + 50px);
+  top: 1600px;
 }
 main .journey-block .box .head {
   display: flex;
@@ -367,7 +374,7 @@ main .skills-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
 }
 main .skill-logo img {
   height: 130px;
@@ -444,6 +451,7 @@ main .projects .card-img {
   overflow: hidden;
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in-out;
 }
 main .projects .card-img img {
   width: 100%;
@@ -613,28 +621,32 @@ footer img {
   }
   main .journey-block .b2 {
     left: calc(50% - 190px);
-    top: 450px;
+    top: 350px;
   }
   main .journey-block .b3 {
     left: calc(50% - 190px);
-    top: 785px;
+    top: 730px;
   }
   main .journey-block .b4 {
     left: calc(50% - 190px);
-    top: 1120px;
+    top: 1090px;
   }
   main .journey-block .b5 {
     left: calc(50% - 190px);
-    top: 1425px;
+    top: 1435px;
+  }
+  main .journey-block .b6 {
+    left: calc(50% - 190px);
+    top: 1750px;
   }
   main .journey-block .line {
-    height: 1400px !important;
+    height: 1600px !important;
   }
   main .journey-block .point {
     display: none;
   }
   main .journey-block {
-    height: 1700px !important;
+    height: 2100px !important;
   }
   main .skill-logo img {
     width: 100px;

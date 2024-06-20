@@ -1,586 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <title>
-      Portfolio - Pauline Soubrié - Web Developer - JavaScript / React.js /
-      Node.js / MongoDB
-    </title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="icon" href="favicon.ico" />
-  </head>
-  <body>
-    <header>
-      <div class="header-content">
-        <div class="top-header">
-          <div class="burger-menu" id="burger" style="display: inline"><img src="./assets/img/icons/menu-bar.png" alt="menu"></div>
-          <div class="close-burger-menu" id="close-burger"><img src="./assets/img/icons/close.png" alt="menu"></div>
-          <div class="mini-logo"><a href="#home"
-          ><img
-            class="logo-img"
-            src="./assets/img/welcome-logo.png"
-            alt="logo 'welcome to My Portfolio"
-          /></a>
-          </div>
-          <div class="contact-logo"><a href="#contact"
-          ><img
-            src="./assets/img/icons/contact.png"
-            alt="contact"
-          /></a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <title>
+    Portfolio - Pauline Soubrié - Web Developer - JavaScript / React.js /
+    Node.js / MongoDB
+  </title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="top-header">
+        <div class="burger-menu" id="burger" style="display: inline"><img src="./assets/img/icons/menu-bar.png"
+            alt="menu"></div>
+        <div class="close-burger-menu" id="close-burger"><img src="./assets/img/icons/close.png" alt="menu"></div>
+        <div class="mini-logo"><a href="#home"><img class="logo-img" src="./assets/img/welcome-logo.png"
+              alt="logo 'welcome to My Portfolio" /></a>
         </div>
-        <div class="bottom-header" id="nav-small-screens" style="display:none">
-          <nav>
+        <div class="contact-logo"><a href="#contact"><img src="./assets/img/icons/contact.png" alt="contact" /></a>
+        </div>
+      </div>
+      <div class="bottom-header" id="nav-small-screens" style="display:none">
+        <nav>
           <a class="nav" href="#home">About Me</a>
           <a class="nav" href="#journey">Education</a>
           <a class="nav" href="#skills">Skills</a>
           <a class="nav" href="#work">Work</a>
           <a class="nav"
-          href=".\assets\documents\CV_Pauline_Soubrie.pdf"
-          download="CV_pauline_soubrie_alternance"
-          >Resume</a>
+            href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25">Interactive
+            Resume</a>
         </nav>
+      </div>
+
+      <div class="left-header">
+        <div class="logo">
+          <a href="#home"><img class="logo-img" src="./assets/img/welcome-logo.png"
+              alt="logo 'welcome to My Portfolio" /></a>
         </div>
-    
-        <div class="left-header">
-          <div class="logo">
-            <a href="#home"
-              ><img
-                class="logo-img"
-                src="./assets/img/welcome-logo.png"
-                alt="logo 'welcome to My Portfolio"
-            /></a>
+        <nav>
+          <a class="nav-link first" href="#home">About Me</a>
+          <a class="nav-link" href="#journey">Education</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#work">Work</a>
+        </nav>
+      </div>
+      <div class="right-header">
+        <a href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25"><button
+            class="nav-btn-white">My interactive resume</button></a>
+        <a href="#contact"><button class="nav-btn-yellow">Contact me</button></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="hero-section-content">
+        <div class="hero-section-title">
+          <h1 id="home">
+            Hi, I'm Pauline,
+            <br />
+            I'm a fullstack developer. <br />I love creating new stuff and
+            learning every day !
+          </h1>
+        </div>
+        <div class="hero-section-buttons">
+          <a class="button" href="#journey">
+            <div class="btn-content">
+              <p>Discover my journey</p>
+              <img class="icon" src="angle-droit.svg" alt="" />
+            </div>
+          </a>
+          <a class="button" href="#skills">
+            <div class="btn-content">
+              <p>Have a look to my toolbox</p>
+              <img class="icon" src="angle-droit.svg" alt="" />
+            </div>
+          </a>
+          <a class="button" href="#work">
+            <div class="btn-content">
+              <p>Explore my projects</p>
+              <img class="icon" src="angle-droit.svg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-section">
+      <div class="journey-block">
+        <h2 class="journey-title" id="journey">My professional journey</h2>
+        <div class="line"></div>
+        <div class="point p1"></div>
+        <div class="point p2"></div>
+        <div class="point p3"></div>
+        <div class="point p4"></div>
+        <div class="point p5"></div>
+        <div class="point p6"></div>
+        <div class="box b1">
+          <div class="head">
+            <a href="https://www.wildcodeschool.com/fr-fr/entreprise" target="_blank">
+              <h3>Your next project !</h3>
+            </a>
+
+            <img class="logo" src="./assets/img/point-dinterrogation.png" alt="" />
           </div>
-          <nav>
-            <a class="nav-link first" href="#home">About Me</a>
-            <a class="nav-link" href="#journey">Education</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#work">Work</a>
+          <p>
+            <span>🚀 Open to work </span>
+            <br><br>
+            Please contact me if you are interested in working
+            with me. I will be delighted to discuss any opportunity !
+          </p>
+        </div>
+        <div class="box b2">
+          <div class="head">
+            <h3>Tech Incubator</h3>
+            <img class="logo" src="./assets/img/alt-logo.jpg" alt="" />
+          </div>
+          <p>
+            I joined &lt; ALT /> to develop new skills in a professionnal environment : <br />
+          </p>
+          <p>
+            I learned a lot about React and NestJs framework, but also clean code and best practices, database
+            conception and optimisation, system architecture, and microservices
+            <br /><br />In a 5 developers team, we created a fullstack web application (SPA) from scratch.
+            This project provides an help to local associatiions to manage their volunteer needs when organiziing
+            events. <br /><br />
+            We work with kanban method and got initiated to GitLab ci/cd and testing.
+          </p>
+        </div>
+        <div class="box b3">
+          <div class="head">
+            <h3>Self-taught education</h3>
+            <img class="logo" src="./assets/img/elearning_logo.jpg" alt="" />
+          </div>
+          <p>
+            During my parental leave, I cultivate my knowledge through several online platforms with
+            self-financing : <br />
+          </p>
+          <ul>
+            <li>
+              <span>TheArenaProject :</span> Shell, File system, Algorithmy
+              and Data Structures
+            </li>
+            <li>
+              <span>'L'école du Web' :</span> Javascript, React, Vue, Tailwind
+            </li>
+            <li><span>NextReact :</span> Typescript, Next.JS, testing</li>
+          </ul>
+          <p>
+            I also follow free lessons or trainings from "FreeCodeCamp",
+            "OpenClassRoom" and more.
+          </p>
+        </div>
+        <div class="box b4">
+          <div class="head">
+            <h3>Le Reacteur</h3>
+            <img class="logo" src="./assets/img/lereacteur_logo.png" alt="" />
+          </div>
+          <p>
+            When I decided to start my career change, I joined an online
+            bootcamp at LeReacteur and started to code intensively.
+            <br /><br />I learned basics of front-end and back-end
+            developpement for Web and Mobile. We used mainly MERN stack
+            (React, Node, Express, MongoDB) to carry out several fullstack
+            projects.<br /><br />
+            I used Git and GitHub daily, and experiment Agile methods for team
+            projects.
+          </p>
+        </div>
+        <div class="box b5">
+          <div class="head">
+            <h3>Professional experiences</h3>
+            <img class="logo" src="./assets/img/vet_logo.jpg" alt="" />
+          </div>
+          <p>
+            I worked during 10 years as a small animal vet in several clinics,
+            witch provides me a solid professional experience.
+            <br /><br />I used to solve problems, make complex knowledge
+            accessible to all kind of people and work with clients and team
+            mates every day. <br /><br />
+            I'm adaptable, autonomous, and I can handle stressfull situations
+            !
+          </p>
+        </div>
+        <div class="box b6">
+          <div class="head">
+            <h3>Scholar cursus</h3>
+            <img class="logo" src=".\assets\img\ENVT-logo.jpg" alt="" />
+          </div>
+          <p>
+            Veterinary PhD in 2012 <br />
+            <span>Ecole Nationale Vétérinaire de Toulouse</span>
+            <br /><br />
+            Preparatory class for biology studies (BCPST) <br />
+            <span>Lycée Fermat - Toulouse</span>
+            <br /><br />
+            'Baccalaureat' S<br />
+            <span>Lycée Théophile Gautier - Tarbes</span>
+          </p>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="skills-content">
+          <h2 id="skills">Some tools I use</h2>
+          <div class="skills-list">
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="blank" class="skill-logo"> <img
+                src="./assets/img/HTML5.png" alt="HTML5" />
+            </a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="blank" class="skill-logo">
+              <img src="./assets/img/CSS3.png" alt="CSS3" />
+            </a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank" class="skill-logo">
+              <img class="js" src="./assets/img/JS.png" alt="Javascript" />
+            </a>
+            <a href="https://www.typescriptlang.org/" target="blank" class="skill-logo">
+              <img src="./assets/img/TS.png" alt="Typescript" />
+            </a>
+            <a href="https://sass-lang.com/" target="blank" class="skill-logo">
+              <img src="./assets/img/Sass.png" alt="Sass" />
+            </a>
+            <a href="https://tailwindcss.com/" target="blank" class="skill-logo">
+              <img src="./assets/img/TailwindCSS.png" alt="Tailwind CSS" />
+            </a>
+            <a href="https://greensock.com/gsap/" target="blank" class="skill-logo">
+              <img src="./assets/img/GSAP.png" alt="GreenSock" />
+            </a><br><br>
+            <a href="https://fr.legacy.reactjs.org/" target="blank" class="skill-logo">
+              <img src="./assets/img/React.png" alt="React and ReactNative" />
+            </a>
+            <a href="https://nodejs.org/en" target="blank" class="skill-logo">
+              <img src="./assets/img/Node.png" alt="Node.js" />
+            </a>
+            <a href="" target="blank" class="skill-logo">
+              <img src="./assets/img/next-short-removebg-preview.png" alt="Next.js" />
+            </a>
+            <a href="" target="blank" class="skill-logo">
+              <img src="./assets/img/nest-removebg-preview.png" alt="NestJs" />
+            </a>
+            <a href="" target="blank" class="skill-logo">
+              <img src="./assets/img/prisma-removebg-preview.png" alt="Prisma" />
+            </a>
+            <a href="" target="blank" class="skill-logo">
+              <img src="./assets/img/mysql-removebg-preview.png" alt="MySql" />
+            </a>
+            <a href="https://www.mongodb.com/fr-fr" target="blank" class="skill-logo">
+              <img src="./assets/img/MongoDB.png" alt="Mongo DB" />
+            </a>
+            <a href="https://git-scm.com/" target="blank" class="skill-logo">
+              <img src="./assets/img/Git.png" alt="Git" />
+            </a>
+            <a href="https://github.com/" target="blank" class="skill-logo">
+              <img src="./assets/img/GitHub.png" alt="GitHub" />
+            </a>
+            <a href="https://code.visualstudio.com/" target="blank" class="skill-logo">
+              <img src="./assets/img/VSCode.png" alt="VS Code" />
+            </a>
+            <a href="" target="blank" class="skill-logo">
+              <img src="./assets/img/png-transparent-docker-hd-logo-thumbnail-removebg-preview(1).png" alt="Docker" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="projects-content">
+          <h2 id="work">My favorite projects</h2>
+          <nav class="projects-nav">
+            <a class="projects-nav" href="#work">All projects</a>
+            <a class="projects-nav managevent" href="#managevent-card">ManagEvent</a>
+            <a class="projects-nav marvel" href="#marvel-card">Marvel</a>
+            <a class="projects-nav vinted" href="#vinted-card">Vinted</a>
+            <a class="projects-nav tellmemore" href="#tellmemore-card">TellMeMore</a>
+            <a class="projects-nav portfolio" href="#portfolio-card">Portfolio</a>
           </nav>
-        </div>
-        <div class="right-header">
-          <a
-            href=".\assets\documents\CV_Pauline_Soubrie.pdf"
-            download="CV_pauline_soubrie_alternance"
-            ><button class="nav-btn-white">Get my resume</button></a
-          >
-          <a href="#contact"
-            ><button class="nav-btn-yellow">Contact me</button></a
-          >
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="hero-section">
-        <div class="hero-section-content">
-          <div class="hero-section-title">
-            <h1 id="home">
-              Hi, I'm Pauline,
-              <br />
-              I'm a fullstack developer. <br />I love creating new stuff and
-              learning every day !
-            </h1>
-          </div>
-          <div class="hero-section-buttons">
-            <a class="button" href="#journey">
-              <div class="btn-content">
-                <p>Discover my journey</p>
-                <img class="icon" src="angle-droit.svg" alt="" />
-              </div>
-            </a>
-            <a class="button" href="#skills">
-              <div class="btn-content">
-                <p>Have a look to my toolbox</p>
-                <img class="icon" src="angle-droit.svg" alt="" />
-              </div>
-            </a>
-            <a class="button" href="#work">
-              <div class="btn-content">
-                <p>Explore my projects</p>
-                <img class="icon" src="angle-droit.svg" alt="" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="bottom-section">
-        <div class="journey-block">
-          <h2 class="journey-title" id="journey">My professional journey</h2>
-          <div class="line"></div>
-          <div class="point p1"></div>
-          <div class="point p2"></div>
-          <div class="point p3"></div>
-          <div class="point p4"></div>
-          <div class="point p5"></div>
-          <div class="box b1">
-            <div class="head">
-              <a
-                href="https://www.wildcodeschool.com/fr-fr/entreprise"
-                target="_blank"
-                ><h3>Wild Code School apprenticeship</h3></a
-              >
 
-              <img
-                class="logo"
-                src="./assets/img/logo_wild_code_school1.webp"
-                alt=""
-              />
-            </div>
-            <p>
-              <span>I'm currently looking for a company 🚀</span>
-
-              <br /><br />
-              I will study React an React Native, Node.js, Typescript,
-              PostgreSQL, GraphQL, CI/CD, Docker, micro-services architecture,
-              JWT, Jest <br />
-              (<a
-                href="./assets/documents/wild_programme_formation_developpeur_alternance_2023.pdf"
-                target="_blank"
-                download="programme"
-                >Full program</a
-              >
-              and
-
-              <a
-                href="./assets/documents/wild_planning_alternance_septembre_2023.pdf"
-                target="_blank"
-                download="planning"
-                >Planning</a
-              >) <br /><br />Please contact me if you are interested in working
-              with me. I will be delighted to discuss any opportunity !
-            </p>
-          </div>
-          <div class="box b2">
-            <div class="head">
-              <h3>Self-taught education</h3>
-              <img class="logo" src="./assets/img/elearning_logo.jpg" alt="" />
-            </div>
-            <p>
-              I cultivate my knowledge through several online platforms with
-              self-financing : <br />
-            </p>
-            <ul>
-              <li>
-                <span>TheArenaProject :</span> Shell, File system, Algorithmy
-                and Data Structures
-              </li>
-              <li>
-                <span>'L'école du Web' :</span> Javascript, React, Vue, Tailwind
-              </li>
-              <li><span>NextReact :</span> Typescript, Next.JS, testing</li>
-            </ul>
-            <p>
-              I also follow free lessons or trainings from "FreeCodeCamp",
-              "OpenClassRoom" and more.
-            </p>
-          </div>
-          <div class="box b3">
-            <div class="head">
-              <h3>Le Reacteur</h3>
-              <img class="logo" src="./assets/img/lereacteur_logo.png" alt="" />
-            </div>
-            <p>
-              When I decided to start my career change, I joined an online
-              bootcamp at LeReacteur and started to code intensively.
-              <br /><br />I learned basics of front-end and back-end
-              developpement for Web and Mobile. We used mainly MERN stack
-              (React, Node, Express, MongoDB) to carry out several fullstack
-              projects.<br /><br />
-              I used Git and GitHub daily, and experiment Agile methods for team
-              projects.
-            </p>
-          </div>
-          <div class="box b4">
-            <div class="head">
-              <h3>Professional experiences</h3>
-              <img class="logo" src="./assets/img/vet_logo.jpg" alt="" />
-            </div>
-            <p>
-              I worked during 10 years as a small animal vet in several clinics,
-              witch provides me a solid professional experience.
-              <br /><br />I used to solve problems, make complex knowledge
-              accessible to all kind of people and work with clients and team
-              mates every day. <br /><br />
-              I'm adaptable, autonomous, and I can handle stressfull situations
-              !
-            </p>
-          </div>
-          <div class="box b5">
-            <div class="head">
-              <h3>Scholar cursus</h3>
-              <img class="logo" src=".\assets\img\ENVT-logo.jpg" alt="" />
-            </div>
-            <p>
-              Veterinary PhD in 2012 <br />
-              <span>Ecole Nationale Vétérinaire de Toulouse</span>
-              <br /><br />
-              Preparatory class for biology studies (BCPST) <br />
-              <span>Lycée Fermat - Toulouse</span>
-              <br /><br />
-              'Baccalaureat' S<br />
-              <span>Lycée Théophile Gautier - Tarbes</span>
-            </p>
-          </div>
-        </div>
-        <div class="skills">
-          <div class="skills-content">
-            <h2 id="skills">Some tools I use</h2>
-            <div class="skills-list">
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/HTML"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/HTML5.png" alt="HTML5" />
-              </a>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/CSS"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/CSS3.png" alt="CSS3" />
-              </a>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
-                target="blank"
-                class="skill-logo"
-              >
-                <img class="js" src="./assets/img/JS.png" alt="Javascript" />
-              </a>
-              <a
-                href="https://www.typescriptlang.org/"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/TS.png" alt="Typescript" />
-              </a>
-              <a
-                href="https://sass-lang.com/"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/Sass.png" alt="Sass" />
-              </a>
-              <a
-                href="https://tailwindcss.com/"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/TailwindCSS.png" alt="Tailwind CSS" />
-              </a>
-              <a
-                href="https://greensock.com/gsap/"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/GSAP.png" alt="GreenSock" />
-              </a>
-              <a
-                href="https://fr.legacy.reactjs.org/"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/React.png" alt="React and ReactNative" />
-              </a>
-              <a href="https://nodejs.org/en" target="blank" class="skill-logo">
-                <img src="./assets/img/Node.png" alt="Node.js" />
-              </a>
-              <a
-                href="https://www.mongodb.com/fr-fr"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/MongoDB.png" alt="Mongo DB" />
-              </a>
-              <a
-                href="https://www.redhat.com/fr/topics/api/what-is-a-rest-api"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/APIRest.png" alt="API REST" />
-              </a>
-              <a href="https://git-scm.com/" target="blank" class="skill-logo">
-                <img src="./assets/img/Git.png" alt="Git" />
-              </a>
-              <a href="https://github.com/" target="blank" class="skill-logo">
-                <img src="./assets/img/GitHub.png" alt="GitHub" />
-              </a>
-              <a
-                href="https://code.visualstudio.com/"
-                target="blank"
-                class="skill-logo"
-              >
-                <img src="./assets/img/VSCode.png" alt="VS Code" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="projects-content">
-            <h2 id="work">My favorite projects</h2>
-            <nav class="projects-nav">
-              <a class="projects-nav" href="#work">All projects</a>
-              <a class="projects-nav marvel" href="#marvel-card">Marvel</a>
-              <a class="projects-nav vinted" href="#vinted-card">Vinted</a>
-              <a class="projects-nav tellmemore" href="#tellmemore-card">TellMeMore</a>
-              <a class="projects-nav symbiose" href="#symbiose-card">Symbiose</a>
-              <a class="projects-nav portfolio" href="#portfolio-card">Portfolio</a>
-            </nav>
-
-            <div class="projects-line"><span id="line"><span></div>
-            <div class="projects-grid">
-              <div class="project-card marvel-card" id="marvel-card">
-                <div class="card-img">
-                  <img src="./assets/img/marvel-banner.jpg" alt="a group of marvel characters" />
-                </div>
-                <div class="card-logo"></div>
-                <div class="card-bottom">
-                  <div class="title-content">
-                    <h4>Marvel API</h4>
-                    <ul>
-                      <li>
-                        <img
-                          src="./assets/img/icons/etiquette.png"
-                          alt=""
-                        /><span
-                          >Web site displaying your favorite comics and
-                          caracters</span
-                        >
-                      </li>
-                      <li>
-                        <img src="./assets/img/icons/etoile.png" alt="" /><span
-                          >Front-end interface, searchbar, pagination. Backend
-                          server, request external API. Favorites record using
-                          local storage.</span
-                        >
-                      </li>
-                      <li>
-                        <img
-                          src="./assets/img/icons/reglages.png"
-                          alt=""
-                        /><span>React, Node/Express</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <p>Solo</p>
-                    <a
-                      class="link-button"
-                      href="https://marvel-technical-test.netlify.app/"
-                      target="_blank"
-                      >Link</a
-                    >
-                  </div>
-                </div>
+          <div class="projects-line"><span id="line"><span></div>
+          <div class="projects-grid">
+            <div class="project-card managevent-card" id="managevent-card">
+              <div class="card-img">
+                <img src="./assets/img/firework.jpg" alt="crowd under firework" />
               </div>
-              <div class="project-card vinted-card" id="vinted-card">
-                <div class="card-img">
-                  <img src="./assets/img/vinted-banner.jpg" alt="a woman looking at clothes" />
-                </div>
-                <div class="card-logo"></div>
-                <div class="card-bottom">
-                  <div class="title-content">
-                    <h4>VINTED CLONE</h4>
-                    <ul>
-                      <li>
-                        <img
-                          src="./assets/img/icons/etiquette.png"
-                          alt=""
-                        /><span>The famous e-commerce website</span>
-                      </li>
-                      <li>
-                        <img src="./assets/img/icons/etoile.png" alt="" /><span
-                          >Frontend integration, authentification
-                          (signup/login), searchbar, articles selling, cart
-                          system, payment</span
-                        >
-                      </li>
-                      <li>
-                        <img
-                          src="./assets/img/icons/reglages.png"
-                          alt=""
-                        /><span>React, Node/Express, CRUD API, Stripe</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <p>Solo</p>
-                    <a
-                      class="link-button"
-                      href="https://vinted-frontend-clone.netlify.app/"
-                      target="_blank"
-                      >Link</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="project-card tellmemore-card" id="tellmemore-card">
-                <div class="card-img">
-                  <img src="./assets/img/tellmemore-banner.png" alt="a green screen with a questionnary" />
-                </div>
-                <div class="card-logo"></div>
-                <div class="card-bottom">
-                  <div class="title-content">
-                    <h4>TELL ME MORE</h4>
-                    <ul>
-                      <li>
-                        <img
-                          src="./assets/img/icons/etiquette.png"
-                          alt=""
-                        /><span>Create, custom and answer questionnaires</span>
-                      </li>
-                      <li>
-                        <img src="./assets/img/icons/etoile.png" alt="" /><span
-                          >Fullstack web-app made for bootcamp certification,
+              <div class="card-logo"></div>
+              <div class="card-bottom">
+                <div class="title-content">
+                  <h4>ManagEvent</h4>
+                  <ul>
+                    <li>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Web SPA - Volunteers handling for associations</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Creation from scratch in a 5 developers team</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Nest, Prisma, MySql
                         </span>
-                      </li>
-                      <li>
-                        <img
-                          src="./assets/img/icons/reglages.png"
-                          alt=""
-                        /><span>React, Node/Express, MongoDB</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <p>Solo</p>
-                    <a
-                      class="link-button"
-                      href="https://tell-me-more-certif.netlify.app"
-                      target="_blank"
-                      >Link</a
-                    >
-                  </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="link">
+                  <p>Team work</p>
+                  <a class="link-button"
+                    href="" target="_blank">Link</a>
                 </div>
               </div>
-              <div class="project-card symbiose-card" id="symbiose-card">
-                <div class="card-img">
-                  <img src="./assets/img/symbiose-banner.png" alt="a drawing with a green tree" />
+            </div>
+            <div class="project-card marvel-card" id="marvel-card">
+              <div class="card-img">
+                <img src="./assets/img/marvel-banner.jpg" alt="a group of marvel characters" />
+              </div>
+              <div class="card-logo"></div>
+              <div class="card-bottom">
+                <div class="title-content">
+                  <h4>Marvel API</h4>
+                  <ul>
+                    <li>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Web site displaying your favorite
+                        comics and
+                        caracters</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Front-end interface, searchbar,
+                        pagination. Backend
+                        server, request external API. Favorites record using
+                        local storage.</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Node/Express</span>
+                    </li>
+                  </ul>
                 </div>
-                <div class="card-logo"></div>
-                <div class="card-bottom">
-                  <div class="title-content">
-                    <h4>MVP SYMBIOSE</h4>
-                    <ul>
-                      <li>
-                        <img
-                          src="./assets/img/icons/etiquette.png"
-                          alt=""
-                        /><span>Mobile app for a startup</span>
-                      </li>
-                      <li>
-                        <img src="./assets/img/icons/etoile.png" alt="" /><span
-                          >Client project in real conditions, product owner
-                          role, team work with Scrum agile methods</span
-                        >
-                      </li>
-                      <li>
-                        <img
-                          src="./assets/img/icons/reglages.png"
-                          alt=""
-                        /><span
-                          >ReactNative/Expo, Node, MongoDB, ForestAdmin</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <p>Team work</p>
-                    <a
-                      class="link-button symbiose"
-                      href="https://github.com/SymbioseAppMobile/symbiose-management-frontend"
-                      target="_blank"
-                      >Link</a
-                    >
-                  </div>
+                <div class="link">
+                  <p>Solo</p>
+                  <a class="link-button" href="https://marvel-technical-test.netlify.app/" target="_blank">Link</a>
                 </div>
               </div>
-              <div class="project-card portfolio-card" id="portfolio-card">
-                <div class="card-img">
-                  <img src="./assets/img/welcome-logo.png" alt="a logo welcome to my portfolio" />
+            </div>
+            <div class="project-card vinted-card" id="vinted-card">
+              <div class="card-img">
+                <img src="./assets/img/vinted-banner.jpg" alt="a woman looking at clothes" />
+              </div>
+              <div class="card-logo"></div>
+              <div class="card-bottom">
+                <div class="title-content">
+                  <h4>VINTED CLONE</h4>
+                  <ul>
+                    <li>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>The famous e-commerce website</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Frontend integration, authentification
+                        (signup/login), searchbar, articles selling, cart
+                        system, payment</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Node/Express, CRUD API,
+                        Stripe</span>
+                    </li>
+                  </ul>
                 </div>
-                <div class="card-logo"></div>
-                <div class="card-bottom">
-                  <div class="title-content">
-                    <h4>My Portfolio</h4>
-                    <ul>
-                      <li>
-                        <img
-                          src="./assets/img/icons/etiquette.png"
-                          alt=""
-                        /><span>Design inspired by ©Welcome to the Jungle</span>
-                      </li>
-                      <li>
-                        <img src="./assets/img/icons/etoile.png" alt="" /><span
-                          >Front-end integration, css animations, UX/UI</span
-                        >
-                      </li>
-                      <li>
-                        <img
-                          src="./assets/img/icons/reglages.png"
-                          alt=""
-                        /><span>HTML5, CSS3, JS, Gsap</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <p>Solo</p>
-                    <a
-                      class="link-button"
-                      href="https://pauline-soubrie.netlify.app/"
-                      target="_blank"
-                      >Link</a
-                    >
-                  </div>
+                <div class="link">
+                  <p>Solo</p>
+                  <a class="link-button" href="https://vinted-frontend-clone.netlify.app/" target="_blank">Link</a>
                 </div>
               </div>
-              <div class="project-card to-continue">
-                <p>To be continued ...</p>
-                <h4>What's your next project ?</h4>
-                <a href="#contact"
-                  ><button class="nav-btn-yellow">Contact me</button></a
-                >
+            </div>
+            <div class="project-card tellmemore-card" id="tellmemore-card">
+              <div class="card-img">
+                <img src="./assets/img/tellmemore-banner.png" alt="a green screen with a questionnary" />
               </div>
+              <div class="card-logo"></div>
+              <div class="card-bottom">
+                <div class="title-content">
+                  <h4>TELL ME MORE</h4>
+                  <ul>
+                    <li>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Create, custom and answer
+                        questionnaires</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Fullstack web-app made for bootcamp
+                        certification,
+                      </span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Node/Express, MongoDB</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="link">
+                  <p>Solo</p>
+                  <a class="link-button" href="https://tell-me-more-certif.netlify.app" target="_blank">Link</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card portfolio-card" id="portfolio-card">
+              <div class="card-img">
+                <img src="./assets/img/welcome-logo.png" alt="a logo welcome to my portfolio" />
+              </div>
+              <div class="card-logo"></div>
+              <div class="card-bottom">
+                <div class="title-content">
+                  <h4>My Portfolio</h4>
+                  <ul>
+                    <li>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Design inspired by ©Welcome to the
+                        Jungle</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Front-end integration, css animations,
+                        UX/UI</span>
+                    </li>
+                    <li>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span>HTML5, CSS3, JS, Gsap</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="link">
+                  <p>Solo</p>
+                  <a class="link-button" href="https://pauline-soubrie.netlify.app/" target="_blank">Link</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card to-continue">
+              <p>To be continued ...</p>
+              <h4>What's your next project ?</h4>
+              <a href="#contact"><button class="nav-btn-yellow">Contact me</button></a>
             </div>
           </div>
         </div>
-        <div class="contact">
-          <h2 id="contact">Contact</h2>
-          <p>Leave me a message !</p>
-          <div class="mail">
-            <a href="mailto:pauline_soubrie@hotmail.fr"
-              ><img src="./assets/img/mail.png" alt=""
-            /></a>
-          </div>
-          <div>
-            <a
-              href="https://www.linkedin.com/in/pauline-soubri%C3%A9-a3a570236/"
-              target="_blank"
-              ><img src="./assets/img/linkedin.png" alt=""
-            /></a>
-          </div>
-          <div>
-            <a href="https://github.com/Pops47" target="_blank"
-              ><img src="./assets/img/github-logo.png" alt=""
-            /></a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-content">
-        <img src="./assets/img/welcome-logo-reverse.png" alt="" />
-        <p>Made with ❤️ by Pops</p>
       </div>
-    </footer>
+      <div class="contact">
+        <h2 id="contact">Contact</h2>
+        <p>Leave me a message !</p>
+        <div class="mail">
+          <a href="mailto:pauline_soubrie@hotmail.fr"><img src="./assets/img/mail.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/pauline-soubri%C3%A9-a3a570236/" target="_blank"><img
+              src="./assets/img/linkedin.png" alt="" /></a>
+        </div>
+        <div>
+          <a href="https://github.com/Pops47" target="_blank"><img src="./assets/img/github-logo.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <img src="./assets/img/welcome-logo-reverse.png" alt="" />
+      <p>Made with ❤️ by Pops</p>
+    </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/burger_toggle.js"></script>
-    <script src="./assets/js/close_navbar.js"></script>
-    <script src="./assets/js/timeline.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/burger_toggle.js"></script>
+  <script src="./assets/js/close_navbar.js"></script>
+  <script src="./assets/js/timeline.js"></script>
+</body>
+
 </html>

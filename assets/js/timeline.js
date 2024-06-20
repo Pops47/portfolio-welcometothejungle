@@ -39,3 +39,11 @@ gsap.to(".b5", {
   opacity: 1,
   duration: 2,
 });
+gsap.to(".b6", {
+  scrollTrigger: {
+    trigger: ".b6",
+    start: "50% bottom",
+  },
+  opacity: 1,
+  duration: 2,
+});
