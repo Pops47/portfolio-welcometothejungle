@@ -6,6 +6,7 @@ Ce portfolio contient des infos sur mon parcours professionnel.
 Vous pourrez y télécharger mon CV, consulter mes projets et me contacter.
 
 Avancée de mes projets :
+  - Managevent : deploy en cours
   - Marvel : terminé
   - Vinted : terminé
   - Portfolio : terminé
