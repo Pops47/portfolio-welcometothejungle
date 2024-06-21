@@ -39,6 +39,12 @@ header,
 footer {
   display: flex;
 }
+
+a[disabled],
+a[disabled]:hover {
+  pointer-events: none;
+  color: #e1e1e1;
+}
 header {
   position: sticky;
   top: 0;
