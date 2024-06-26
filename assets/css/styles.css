@@ -492,11 +492,14 @@ main .projects .card-bottom .link {
   align-items: center;
 }
 main .projects .card-bottom .link p {
+  font-style: italic;
+}
+main .projects .card-bottom .link p {
   font-weight: bold;
   font-size: small;
 }
 main .projects .card-bottom .link a {
-  border: black solid 1px;
+  /* border: black solid 1px; */
   padding: 8px 15px;
   color: black;
   font-size: small;
