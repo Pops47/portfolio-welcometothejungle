@@ -28,30 +28,34 @@
     <div class="header-content">
       <div class="top-header">
         <button class="burger-menu" id="burger" style="display: inline" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
-          <img src="./assets/img/icons/menu-bar.png" alt="Menu" />
+          <i class="fa-solid fa-bars"></i>
         </button>
         <button class="close-burger-menu" id="close-burger" aria-label="Fermer le menu de navigation">
-          <img src="./assets/img/icons/close.png" alt="Fermer" />
+          <i class="fa-solid fa-times"></i>
         </button>
         <div class="mini-logo">
           <a href="#home" aria-label="Retour à l'accueil">
             <img class="logo-img" src="./assets/img/welcome-logo.png" alt="Logo Welcome to My Portfolio" />
           </a>
         </div>
-        <div class="contact-logo">
-          <a href="#contact" aria-label="Aller à la section contact">
-            <img src="./assets/img/icons/contact.png" alt="Contact" />
-          </a>
+        <div class="header-lang-mobile">
+          <div class="language-switch">
+            <button id="language-toggle-mobile" aria-label="Changer de langue">
+              <div class="flag-container">
+                <span class="flag flag-fr">🇫🇷</span>
+                <span class="flag flag-en">🇬🇧</span>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
       <nav class="bottom-header" id="nav-small-screens" style="display:none" role="navigation" aria-label="Navigation mobile">
-        <a class="nav" href="#home" aria-label="Section À propos">About Me</a>
-        <a class="nav" href="#journey" aria-label="Section Parcours">Education</a>
-        <a class="nav" href="#skills" aria-label="Section Compétences">Skills</a>
-        <a class="nav" href="#work" aria-label="Section Projets">Work</a>
-        <a class="nav" 
-          href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le CV interactif dans un nouvel onglet">Interactive
-          Resume</a>
+        <a class="nav" href="#home" aria-label="Section À propos" data-i18n="nav.about">About Me</a>
+        <a class="nav" href="#journey" aria-label="Section Parcours" data-i18n="nav.education">Education</a>
+        <a class="nav" href="#skills" aria-label="Section Compétences" data-i18n="nav.skills">Skills</a>
+        <a class="nav" href="#work" aria-label="Section Projets" data-i18n="nav.work">Work</a>
+        <a class="nav" href="#contact" aria-label="Section Contact" data-i18n="nav.contact">Contact</a>
+        <a class="nav" href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le CV interactif dans un nouvel onglet" data-i18n="nav.resume">Interactive Resume</a>
       </nav>
 
       <div class="left-header">
@@ -61,18 +65,26 @@
           </a>
         </div>
         <nav role="navigation" aria-label="Navigation principale">
-          <a class="nav-link first" href="#home" aria-label="Section À propos">About Me</a>
-          <a class="nav-link" href="#journey" aria-label="Section Parcours">Education</a>
-          <a class="nav-link" href="#skills" aria-label="Section Compétences">Skills</a>
-          <a class="nav-link" href="#work" aria-label="Section Projets">Work</a>
+          <a class="nav-link first" href="#home" aria-label="Section À propos" data-i18n="nav.about">About Me</a>
+          <a class="nav-link" href="#journey" aria-label="Section Parcours" data-i18n="nav.education">Education</a>
+          <a class="nav-link" href="#skills" aria-label="Section Compétences" data-i18n="nav.skills">Skills</a>
+          <a class="nav-link" href="#work" aria-label="Section Projets" data-i18n="nav.work">Work</a>
         </nav>
       </div>
       <div class="right-header">
+        <div class="language-switch">
+          <button id="language-toggle-desktop" aria-label="Changer de langue">
+            <div class="flag-container">
+              <span class="flag flag-fr">🇫🇷</span>
+              <span class="flag flag-en">🇬🇧</span>
+            </div>
+          </button>
+        </div>
         <a href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le CV interactif dans un nouvel onglet">
-          <button class="nav-btn-white">My interactive resume</button>
+          <button class="nav-btn-white" data-i18n="nav.resume">My online resume</button>
         </a>
         <a href="#contact" aria-label="Aller à la section contact">
-          <button class="nav-btn-yellow">Contact me</button>
+          <button class="nav-btn-yellow" data-i18n="nav.contact">Contact me</button>
         </a>
       </div>
     </div>
@@ -81,29 +93,28 @@
     <section class="hero-section" id="home" aria-labelledby="hero-title">
       <div class="hero-section-content">
         <div class="hero-section-title">
-          <h1 id="hero-title">
+          <h1 id="hero-title" data-i18n="hero.title">
             Hi, I'm Pauline,
             <br />
-            I'm a fullstack developer. <br />I love creating new things and
-            learning every day!
+            I'm a fullstack developer. <br />I love creating new things, solve problems and learn every day!
           </h1>
         </div>
         <div class="hero-section-buttons">
           <a class="button" href="#journey" aria-label="Découvrir mon parcours">
             <div class="btn-content">
-              <p>Discover my journey</p>
+              <p data-i18n="hero.discover_journey">Discover my journey</p>
               <img class="icon" src="angle-droit.svg" alt="" aria-hidden="true" />
             </div>
           </a>
           <a class="button" href="#skills" aria-label="Voir mes compétences">
             <div class="btn-content">
-              <p>Check out my toolbox</p>
+              <p data-i18n="hero.check_toolbox">Check out my toolbox</p>
               <img class="icon" src="angle-droit.svg" alt="" aria-hidden="true" />
             </div>
           </a>
           <a class="button" href="#work" aria-label="Explorer mes projets">
             <div class="btn-content">
-              <p>Discover my projects</p>
+              <p data-i18n="hero.discover_projects">Discover my projects</p>
               <img class="icon" src="angle-droit.svg" alt="" aria-hidden="true" />
             </div>
           </a>
@@ -112,7 +123,7 @@
     </section>
     <section class="bottom-section">
       <div class="journey-block fade-in">
-        <h2 class="journey-title" id="journey">My Career Journey</h2>
+        <h2 class="journey-title" id="journey" data-i18n="journey.title">My Career Journey</h2>
         <div class="line"></div>
         <div class="point p1"></div>
         <div class="point p2"></div>
@@ -123,9 +134,9 @@
         <div class="point p7"></div>
         <div class="box b1">
           <div class="head">
-            <h3>Internship at Solving Company</h3>
+            <h3 data-i18n="journey.solving.title">Internship at Solving Company</h3>
           </div>
-          <p>
+          <p data-i18n="journey.solving.description">
             Designed and developed an MVP for a medical device web application.
           </p>
           <ul>
@@ -139,9 +150,9 @@
         </div>
         <div class="box b2">
           <div class="head">
-            <h3>Freelancing in a web agency</h3>
+            <h3 data-i18n="journey.freelance.title">Freelancing in a web agency</h3>
           </div>
-          <p>
+          <p data-i18n="journey.freelance.description">
             CRM redesign project for a law firm.
           </p>
           <ul>
@@ -155,10 +166,10 @@
         </div>
         <div class="box b3">
           <div class="head">
-            <h3>Tech Incubator</h3>
+            <h3 data-i18n="journey.alt.title">Tech Incubator</h3>
             <img class="logo" src="./assets/img/alt-logo.jpg" alt="" />
           </div>
-          <p>
+          <p data-i18n="journey.alt.description">
             Joined &lt; ALT /> to develop my skills in a professional environment.
           </p>
           <ul>
@@ -172,10 +183,10 @@
         </div>
         <div class="box b4">
           <div class="head">
-            <h3>Le Reacteur</h3>
+            <h3 data-i18n="journey.reacteur.title">Le Reacteur</h3>
             <img class="logo" src="./assets/img/lereacteur_logo.png" alt="" />
           </div>
-          <p>
+          <p data-i18n="journey.reacteur.description">
             Career change bootcamp - intensive coding training program.
           </p>
           <ul>
@@ -188,10 +199,10 @@
         </div>
         <div class="box b5">
           <div class="head">
-            <h3>Self-taught education</h3>
+            <h3 data-i18n="journey.self_taught.title">Self-taught education</h3>
             <img class="logo" src="./assets/img/elearning_logo.jpg" alt="" />
           </div>
-          <p>
+          <p data-i18n="journey.self_taught.description">
             During parental leave, I invested in continuous learning through online platforms:
           </p>
           <ul>
@@ -212,10 +223,10 @@
         </div>
         <div class="box b6">
           <div class="head">
-            <h3>Professional experiences</h3>
+            <h3 data-i18n="journey.vet.title">Professional experiences</h3>
             <img class="logo" src="./assets/img/vet_logo.jpg" alt="" />
           </div>
-          <p>
+          <p data-i18n="journey.vet.description">
             10 years as a small animal veterinarian in various clinics.
           </p>
           <ul>
@@ -228,7 +239,7 @@
         </div>
         <div class="box b7">
           <div class="head">
-            <h3>Academic Background</h3>
+            <h3 data-i18n="journey.academic.title">Academic Background</h3>
             <img class="logo" src=".\assets\img\ENVT-logo.jpg" alt="" />
           </div>
           <ul>
@@ -249,7 +260,7 @@
       </div>
       <div class="skills fade-in">
         <div class="skills-content">
-          <h2 id="skills">My Tech Stack</h2>
+          <h2 id="skills" data-i18n="skills.title">My Tech Stack</h2>
           <div class="skills-list">
             <!-- Front-end -->
             <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank" class="skill-logo" data-tooltip="JavaScript - Langage de programmation principal">
@@ -317,9 +328,9 @@
       </div>
       <div class="projects fade-in">
         <div class="projects-content">
-          <h2 id="work">Featured Projects</h2>
+          <h2 id="work" data-i18n="projects.title">My Projects</h2>
           <nav class="projects-nav">
-            <a class="projects-nav" href="#work">All projects</a>
+            <a class="projects-nav" href="#work" data-i18n="projects.all_projects">All projects</a>
             <a class="projects-nav solving" href="#solving-card">Solving</a>
             <a class="projects-nav actioneo" href="#actioneo-card">Actioneo</a>
             <a class="projects-nav managevent" href="#managevent-card">ManagEvent</a>
@@ -330,7 +341,7 @@
           </nav>
 
           <div class="projects-line"><span id="line"><span></div>
-            <h3 class="italic">All my projects are hosted on open-source or free platforms. Please let me know if any links are broken.</h3>
+            <h3 class="italic" data-i18n="projects.note">All my projects are hosted on open-source or free platforms. Please let me know if any links are broken.</h3>
             <br/> <br/>
           <div class="projects-grid">
             <div class="project-card solving-card" id="solving-card">
@@ -557,8 +568,8 @@
         </div>
       </div>
       <div class="contact fade-in">
-        <h2 id="contact">Contact</h2>
-        <p>Leave me a message!</p>
+        <h2 id="contact" data-i18n="contact.title">Contact</h2>
+        <p data-i18n="contact.message">Leave me a message!</p>
         <div class="mail">
           <a href="mailto:pauline_soubrie@hotmail.fr"><img src="./assets/img/mail.png" alt="" /></a>
         </div>
@@ -575,7 +586,7 @@
   <footer>
     <div class="footer-content">
       <img src="./assets/img/welcome-logo-reverse.png" alt="" />
-      <p>Made with ❤️ by Pops</p>
+      <p data-i18n="footer.made_by">Made with ❤️ by Pops</p>
     </div>
   </footer>
 
@@ -586,6 +597,7 @@
   <script src="./assets/js/timeline.js"></script>
   <script src="./assets/js/enhanced-interactions.js"></script>
   <script src="./assets/js/screenshots-carousel.js"></script>
+  <script src="./assets/js/i18n.js"></script>
   <script src="https://kit.fontawesome.com/6fe71acdbb.js" crossorigin="anonymous"></script>
 
   <!-- Modale pour les captures d'écran Solving -->
