@@ -918,6 +918,13 @@ main .projects .card-bottom .link a:hover {
   transform: translateY(-1px);
 }
 
+main .projects .card-bottom .link .demo-text {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #666;
+  margin-left: auto;
+}
+
 main .to-continue {
   display: flex;
   flex-direction: column;
