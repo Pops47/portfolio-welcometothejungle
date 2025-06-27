@@ -15,7 +15,7 @@ Portfolio personnel inspiré du design de Welcome to the Jungle, présentant mon
 
 ## 📱 Responsive Design
 
-Le portfolio s'adapte parfaitement à tous les écrans :
+Le portfolio s'adapte à tous les écrans :
 
 - **Desktop** : Navigation complète avec timeline
 - **Tablet** : Adaptation de la grille et des animations
@@ -40,11 +40,3 @@ Le portfolio s'adapte parfaitement à tous les écrans :
 - **CV Interactif** : [Notion](https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25)
 - **LinkedIn** : [Profil LinkedIn](https://www.linkedin.com/in/pauline-soubri%C3%A9-a3a570236/)
 - **GitHub** : [@Pops47](https://github.com/Pops47)
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. N'hésitez pas à l'utiliser comme base pour votre propre portfolio !
-
----
-
-**Développé avec ❤️ par Pauline Soubrié**
