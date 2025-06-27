@@ -335,7 +335,7 @@
           <div class="projects-grid">
             <div class="project-card solving-card" id="solving-card">
               <div class="card-img">
-                <img src="./assets/img/solving-banner.png" alt="Solving medical application banner" />
+                <img src="./assets/img/banners/solving-banner.png" alt="Solving medical application banner" />
               </div>
               <div class="card-logo"></div>
               <div class="card-bottom">
@@ -354,14 +354,16 @@
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Internship</p>
-                  <span class="demo-text">démo sur demande</span>
+                  <p>Private (demo on demand)</p>
+                  <button class="screenshots-btn" id="solving-screenshots-btn">
+                    <i class="fa-solid fa-images"></i> Screenshots
+                  </button>
                 </div>
               </div>
             </div>
             <div class="project-card actioneo-card" id="actioneo-card">
               <div class="card-img">
-                <img src="./assets/img/actioneo_banner.png" alt="Actioneo CRM banner" />
+                <img src="./assets/img/banners/actioneo_banner.png" alt="Actioneo CRM banner" />
               </div>
               <div class="card-logo"></div>
               <div class="card-bottom">
@@ -380,15 +382,16 @@
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Freelance</p>
-                  <a class=""
-                    href="https://v2-staging-front-actioneo.alt-tech.bzh" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <p>Private (demo on demand)</p>
+                  <button class="screenshots-btn" id="actioneo-screenshots-btn">
+                    <i class="fa-solid fa-images"></i> Screenshots
+                  </button>
                 </div>
               </div>
             </div>
             <div class="project-card managevent-card" id="managevent-card">
               <div class="card-img">
-                <img src="./assets/img/firework.jpg" alt="crowd under firework" />
+                <img src="./assets/img/banners/firework.jpg" alt="crowd under firework" />
               </div>
               <div class="card-logo"></div>
               <div class="card-bottom">
@@ -408,11 +411,10 @@
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Team work</p>
                   <a class=""
-                  href="https://github.com/Pops47/managevent_front" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
+                  href="https://github.com/Pops47/managevent_frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
                   <a class=""
-                  href="https://github.com/Pops47/managevent_back" target="_blank"><i class="fa-brands fa-github"></i> Back</a>
+                  href="https://github.com/Pops47/managevent_backend" target="_blank"><i class="fa-brands fa-github"></i> Back</a>
                   <a class=""
                     href="https://manageventbackend-production.up.railway.app/apiDoc" target="_blank">Swagger API doc</a>
                   <a class=""
@@ -422,7 +424,7 @@
             </div>
             <div class="project-card marvel-card" id="marvel-card">
               <div class="card-img">
-                <img src="./assets/img/marvel-banner.jpg" alt="a group of marvel characters" />
+                <img src="./assets/img/banners/marvel-banner.jpg" alt="a group of marvel characters" />
               </div>
               <div class="card-logo"></div>
               <div class="card-bottom">
@@ -443,7 +445,6 @@
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Solo</p>
                   <a class=""
                   href="https://github.com/Pops47/marvel-frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
                   <a class=""
@@ -455,7 +456,7 @@
             </div>
             <div class="project-card vinted-card" id="vinted-card">
               <div class="card-img">
-                <img src="./assets/img/vinted-banner.jpg" alt="a woman looking at clothes" />
+                <img src="./assets/img/banners/vinted-banner.jpg" alt="a woman looking at clothes" />
               </div>
               <div class="card-logo"></div>
               <div class="card-bottom">
@@ -476,7 +477,6 @@
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Solo</p>
                   <a class=""
                   href="https://github.com/Pops47/vinted-frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
                   <a class=""
@@ -488,7 +488,7 @@
             </div>
             <div class="project-card tellmemore-card" id="tellmemore-card">
               <div class="card-img">
-                <img src="./assets/img/tellmemore-banner.png" alt="a green screen with a questionnary" />
+                <img src="./assets/img/banners/tellmemore-banner.png" alt="a green screen with a questionnary" />
               </div>
               <div class="card-logo"></div>
               <div class="card-bottom">
@@ -510,7 +510,6 @@
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Solo</p>
                   <a class=""
                   href="https://github.com/Pops47/tell-me-more-frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
                   <a class=""
@@ -544,10 +543,8 @@
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Solo</p>
                   <a class=""
                   href="https://github.com/Pops47/portfolio-welcometothejungle" target="_blank"><i class="fa-brands fa-github"></i></a>
-                 
                 </div>
               </div>
             </div>
@@ -588,7 +585,110 @@
   <script src="./assets/js/close_navbar.js"></script>
   <script src="./assets/js/timeline.js"></script>
   <script src="./assets/js/enhanced-interactions.js"></script>
+  <script src="./assets/js/screenshots-carousel.js"></script>
   <script src="https://kit.fontawesome.com/6fe71acdbb.js" crossorigin="anonymous"></script>
+
+  <!-- Modale pour les captures d'écran Solving -->
+  <div id="screenshots-modal" class="screenshots-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Captures d'écran - Solving Company</h3>
+        <button class="close-modal" id="close-screenshots-modal">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+      <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carousel-track">
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_1.png" alt="Capture d'écran Solving 1" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_2.png" alt="Capture d'écran Solving 2" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_3.png" alt="Capture d'écran Solving 3" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_4.png" alt="Capture d'écran Solving 4" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_5.png" alt="Capture d'écran Solving 5" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_6.png" alt="Capture d'écran Solving 6" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_7.png" alt="Capture d'écran Solving 7" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_8.png" alt="Capture d'écran Solving 8" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/solving-screenshots/capture_9.png" alt="Capture d'écran Solving 9" />
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next-btn" id="next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="carousel-indicators" id="carousel-indicators">
+        <!-- Les indicateurs seront générés par JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modale pour les captures d'écran Actioneo -->
+  <div id="actioneo-screenshots-modal" class="screenshots-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Captures d'écran - Actioneo</h3>
+        <button class="close-modal" id="close-actioneo-screenshots-modal">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+      <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="actioneo-prev-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="actioneo-carousel-track">
+            <div class="carousel-slide">
+              <img src="./assets/img/actioneo-screenshots/capture_10.png" alt="Capture d'écran Actioneo 1" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/actioneo-screenshots/capture_11.png" alt="Capture d'écran Actioneo 2" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/actioneo-screenshots/capture_12.png" alt="Capture d'écran Actioneo 3" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/actioneo-screenshots/capture_13.png" alt="Capture d'écran Actioneo 4" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/actioneo-screenshots/capture_14.png" alt="Capture d'écran Actioneo 5" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/actioneo-screenshots/capture_15.png" alt="Capture d'écran Actioneo 6" />
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/actioneo-screenshots/capture_16.png" alt="Capture d'écran Actioneo 7" />
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next-btn" id="actioneo-next-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="carousel-indicators" id="actioneo-carousel-indicators">
+        <!-- Les indicateurs seront générés par JavaScript -->
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
