@@ -1,98 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
+  <meta name="description" content="Portfolio de Pauline Soubrié - Développeuse Fullstack JavaScript spécialisée en React, Node.js et MongoDB. Découvrez mes projets et mon parcours professionnel." />
+  <meta name="keywords" content="développeuse, fullstack, JavaScript, React, Node.js, MongoDB, portfolio, Pauline Soubrié" />
+  <meta name="author" content="Pauline Soubrié" />
+  <meta property="og:title" content="Portfolio - Pauline Soubrié - Développeuse Fullstack" />
+  <meta property="og:description" content="Portfolio de Pauline Soubrié - Développeuse Fullstack JavaScript spécialisée en React, Node.js et MongoDB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://votre-domaine.com" />
+  <meta property="og:image" content="./assets/img/welcome-logo.png" />
   <title>
-    Portfolio - Pauline Soubrié - Web Developer - JavaScript / React.js /
+    Portfolio - Pauline Soubrié - Développeuse Fullstack - JavaScript / React.js /
     Node.js / MongoDB
   </title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://kit.fontawesome.com" />
 </head>
 
 <body>
-  <header>
+  <header role="banner">
     <div class="header-content">
       <div class="top-header">
-        <div class="burger-menu" id="burger" style="display: inline"><img src="./assets/img/icons/menu-bar.png"
-            alt="menu"></div>
-        <div class="close-burger-menu" id="close-burger"><img src="./assets/img/icons/close.png" alt="menu"></div>
-        <div class="mini-logo"><a href="#home"><img class="logo-img" src="./assets/img/welcome-logo.png"
-              alt="logo 'welcome to My Portfolio" /></a>
+        <button class="burger-menu" id="burger" style="display: inline" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+          <img src="./assets/img/icons/menu-bar.png" alt="Menu" />
+        </button>
+        <button class="close-burger-menu" id="close-burger" aria-label="Fermer le menu de navigation">
+          <img src="./assets/img/icons/close.png" alt="Fermer" />
+        </button>
+        <div class="mini-logo">
+          <a href="#home" aria-label="Retour à l'accueil">
+            <img class="logo-img" src="./assets/img/welcome-logo.png" alt="Logo Welcome to My Portfolio" />
+          </a>
         </div>
-        <div class="contact-logo"><a href="#contact"><img src="./assets/img/icons/contact.png" alt="contact" /></a>
+        <div class="contact-logo">
+          <a href="#contact" aria-label="Aller à la section contact">
+            <img src="./assets/img/icons/contact.png" alt="Contact" />
+          </a>
         </div>
       </div>
-      <div class="bottom-header" id="nav-small-screens" style="display:none">
-        <nav>
-          <a class="nav" href="#home">About Me</a>
-          <a class="nav" href="#journey">Education</a>
-          <a class="nav" href="#skills">Skills</a>
-          <a class="nav" href="#work">Work</a>
-          <a class="nav" 
-            href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25" target=”_blank”>Interactive
-            Resume</a>
-        </nav>
-      </div>
+      <nav class="bottom-header" id="nav-small-screens" style="display:none" role="navigation" aria-label="Navigation mobile">
+        <a class="nav" href="#home" aria-label="Section À propos">About Me</a>
+        <a class="nav" href="#journey" aria-label="Section Parcours">Education</a>
+        <a class="nav" href="#skills" aria-label="Section Compétences">Skills</a>
+        <a class="nav" href="#work" aria-label="Section Projets">Work</a>
+        <a class="nav" 
+          href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le CV interactif dans un nouvel onglet">Interactive
+          Resume</a>
+      </nav>
 
       <div class="left-header">
         <div class="logo">
-          <a href="#home"><img class="logo-img" src="./assets/img/welcome-logo.png"
-              alt="logo 'welcome to My Portfolio" /></a>
+          <a href="#home" aria-label="Retour à l'accueil">
+            <img class="logo-img" src="./assets/img/welcome-logo.png" alt="Logo Welcome to My Portfolio" />
+          </a>
         </div>
-        <nav>
-          <a class="nav-link first" href="#home">About Me</a>
-          <a class="nav-link" href="#journey">Education</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#work">Work</a>
+        <nav role="navigation" aria-label="Navigation principale">
+          <a class="nav-link first" href="#home" aria-label="Section À propos">About Me</a>
+          <a class="nav-link" href="#journey" aria-label="Section Parcours">Education</a>
+          <a class="nav-link" href="#skills" aria-label="Section Compétences">Skills</a>
+          <a class="nav-link" href="#work" aria-label="Section Projets">Work</a>
         </nav>
       </div>
       <div class="right-header">
-        <a href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25" target=”_blank”><button
-            class="nav-btn-white">My interactive resume</button></a>
-        <a href="#contact"><button class="nav-btn-yellow">Contact me</button></a>
+        <a href="https://unique-metacarpal-6bd.notion.site/Pauline-SOUBRI-406a48eded604201be48ec9b36fca3bd?pvs=25" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le CV interactif dans un nouvel onglet">
+          <button class="nav-btn-white">My interactive resume</button>
+        </a>
+        <a href="#contact" aria-label="Aller à la section contact">
+          <button class="nav-btn-yellow">Contact me</button>
+        </a>
       </div>
     </div>
   </header>
-  <main>
-    <section class="hero-section">
+  <main role="main">
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
       <div class="hero-section-content">
         <div class="hero-section-title">
-          <h1 id="home">
+          <h1 id="hero-title">
             Hi, I'm Pauline,
             <br />
-            I'm a javascript fullstack developer. <br />I love creating new stuff and
+            I'm a fullstack developer. <br />I love creating new stuff and
             learning every day !
           </h1>
         </div>
         <div class="hero-section-buttons">
-          <a class="button" href="#journey">
+          <a class="button" href="#journey" aria-label="Découvrir mon parcours">
             <div class="btn-content">
               <p>Discover my journey</p>
-              <img class="icon" src="angle-droit.svg" alt="" />
+              <img class="icon" src="angle-droit.svg" alt="" aria-hidden="true" />
             </div>
           </a>
-          <a class="button" href="#skills">
+          <a class="button" href="#skills" aria-label="Voir mes compétences">
             <div class="btn-content">
               <p>Have a look to my toolbox</p>
-              <img class="icon" src="angle-droit.svg" alt="" />
+              <img class="icon" src="angle-droit.svg" alt="" aria-hidden="true" />
             </div>
           </a>
-          <a class="button" href="#work">
+          <a class="button" href="#work" aria-label="Explorer mes projets">
             <div class="btn-content">
               <p>Explore my projects</p>
-              <img class="icon" src="angle-droit.svg" alt="" />
+              <img class="icon" src="angle-droit.svg" alt="" aria-hidden="true" />
             </div>
           </a>
         </div>
       </div>
     </section>
     <section class="bottom-section">
-      <div class="journey-block">
+      <div class="journey-block fade-in">
         <h2 class="journey-title" id="journey">My professional journey</h2>
         <div class="line"></div>
         <div class="point p1"></div>
@@ -101,65 +120,55 @@
         <div class="point p4"></div>
         <div class="point p5"></div>
         <div class="point p6"></div>
+        <div class="point p7"></div>
         <div class="box b1">
           <div class="head">
-            <a href="https://www.wildcodeschool.com/fr-fr/entreprise" target="_blank">
-              <h3>Your next project !</h3>
-            </a>
-
-            <img class="logo" src="./assets/img/point-dinterrogation.png" alt="" />
+            <h3>Internship at Solving Company</h3>
           </div>
           <p>
-      
-            I work mainly with React and Node.js but I'm open to learn new langages.
-            <br><br>
-            Please contact me if you are interested in working
-            with me. I will be happy to discuss any opportunity !
+            Designed and developed MVP for medical device web application.
           </p>
+          <ul>
+            <li>Fullstack project: React, Flask, PostgreSQL</li>
+            <li>Clean architecture & secure authentication</li>
+            <li>Multi-user types & dashboards</li>
+            <li>Consultation scheduling system</li>
+            <li>ReactFlow interface for medical genealogical trees</li>
+            <li>Genogram visualization for doctors</li>
+          </ul>
         </div>
         <div class="box b2">
+          <div class="head">
+            <h3>Freelance Mission</h3>
+          </div>
+          <p>
+            CRM redesign project for mentor's agency.
+          </p>
+          <ul>
+            <li>React frontend development from provided mockups</li>
+            <li>Authentication forms and user management</li>
+            <li>Multiple page development and routing</li>
+            <li>API integration and backend connectivity</li>
+            <li>Responsive design and UX optimization</li>
+            <li>2-month intensive development mission</li>
+          </ul>
+        </div>
+        <div class="box b3">
           <div class="head">
             <h3>Tech Incubator</h3>
             <img class="logo" src="./assets/img/alt-logo.jpg" alt="" />
           </div>
           <p>
-            I joined &lt; ALT /> to develop new skills in a professionnal environment : <br />
-          </p>
-          <p>
-            I learned a lot about React and NestJs framework, but also clean code and best practices, database
-            conception and optimisation, system architecture, and microservices
-            <br /><br />In a 5 developers team, we created a fullstack web application (SPA) from scratch.
-            This project provides an help to local associations to manage their volunteer needs when organizing
-            events. <br /><br />
-            We work with kanban method and got initiated to GitLab ci/cd and testing.
-          </p>
-        </div>
-        <div class="box b3">
-          <div class="head">
-            <h3>Self-taught education</h3>
-            <img class="logo" src="./assets/img/elearning_logo.jpg" alt="" />
-          </div>
-          <p>
-            During my parental leave, I cultivate my knowledge through several online platforms with
-            self-financing : <br />
+            Joined &lt; ALT /> to develop skills in a professional environment.
           </p>
           <ul>
-             <li>
-              <span>Dyma :</span> Linux, Git and Docker certifications completed
-            </li>
-            <li>
-              <span>TheArenaProject :</span> Shell, File system, Algorithmy
-              and Data Structures
-            </li>
-            <li>
-              <span>'L'école du Web' :</span> Javascript, React, Vue, Tailwind
-            </li>
-            <li><span>NextReact :</span> Typescript, Next.JS, testing</li>
+            <li>React, NestJS, clean code practices</li>
+            <li>Database optimization & system architecture</li>
+            <li>Microservices development</li>
+            <li>Built fullstack SPA for volunteer management</li>
+            <li>5-developer team using Kanban methodology</li>
+            <li>GitLab CI/CD implementation</li>
           </ul>
-          <p>
-            I also follow free lessons or trainings from "FreeCodeCamp",
-            "OpenClassRoom" and more.
-          </p>
         </div>
         <div class="box b4">
           <div class="head">
@@ -167,49 +176,78 @@
             <img class="logo" src="./assets/img/lereacteur_logo.png" alt="" />
           </div>
           <p>
-            When I decided to start my career change, I joined an online
-            bootcamp at LeReacteur and started to code intensively.
-            <br /><br />I learned basics of front-end and back-end
-            developpement for Web and Mobile. We used mainly MERN stack
-            (React, Node, Express, MongoDB) to carry out several fullstack
-            projects.<br /><br />
-            I used Git and GitHub daily, and experiment Agile methods for team
-            projects.
+            Career change bootcamp - intensive coding training.
           </p>
+          <ul>
+            <li>Front-end and back-end development</li>
+            <li>Web and Mobile development</li>
+            <li>MERN stack (React, Node, Express, MongoDB)</li>
+            <li>Daily Git/GitHub usage</li>
+            <li>Agile methodology for team projects</li>
+          </ul>
         </div>
         <div class="box b5">
+          <div class="head">
+            <h3>Self-taught education</h3>
+            <img class="logo" src="./assets/img/elearning_logo.jpg" alt="" />
+          </div>
+          <p>
+            During parental leave, I invested in continuous learning through online platforms:
+          </p>
+          <ul>
+             <li>
+              <span>Dyma :</span> Linux, Git and Docker certifications
+            </li>
+            <li>
+              <span>TheArenaProject :</span> Shell, File system, Algorithms and Data Structures
+            </li>
+            <li>
+              <span>'L'école du Web' :</span> Javascript, React, Vue, Tailwind
+            </li>
+            <li><span>NextReact :</span> Typescript, Next.JS, testing</li>
+          </ul>
+          <p>
+            Also followed free courses from "FreeCodeCamp" and "OpenClassRoom".
+          </p>
+        </div>
+        <div class="box b6">
           <div class="head">
             <h3>Professional experiences</h3>
             <img class="logo" src="./assets/img/vet_logo.jpg" alt="" />
           </div>
           <p>
-            I worked during 10 years as a small animal vet in several clinics,
-            witch provides me a solid professional experience.
-            <br /><br />I used to solve problems, make complex knowledge
-            accessible to all kind of people and work with clients and team
-            mates every day. <br /><br />
-            I'm adaptable, autonomous, and I can handle stressfull situations
-            !
+            10 years as a small animal veterinarian in various clinics.
           </p>
+          <ul>
+            <li>Strong problem-solving skills</li>
+            <li>Complex knowledge communication</li>
+            <li>Daily client/team collaboration</li>
+            <li>Adaptable and autonomous professional</li>
+            <li>Stress-resistant in challenging situations</li>
+          </ul>
         </div>
-        <div class="box b6">
+        <div class="box b7">
           <div class="head">
             <h3>Scholar cursus</h3>
             <img class="logo" src=".\assets\img\ENVT-logo.jpg" alt="" />
           </div>
-          <p>
-            Veterinary PhD in 2012 <br />
-            <span>Ecole Nationale Vétérinaire de Toulouse</span>
-            <br /><br />
-            Preparatory class for biology studies (BCPST) <br />
-            <span>Lycée Fermat - Toulouse</span>
-            <br /><br />
-            'Baccalaureat' S<br />
-            <span>Lycée Théophile Gautier - Tarbes</span>
-          </p>
+          <ul>
+            <li>
+              <span>Veterinary PhD (2012)</span><br />
+              Ecole Nationale Vétérinaire de Toulouse
+            </li>
+            <li>
+              <span>Biology preparatory class (BCPST)</span><br />
+              Lycée Fermat - Toulouse
+            </li>
+            <li>
+              <span>Scientific Baccalaureate</span><br />
+              Lycée Théophile Gautier - Tarbes
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="skills">
+      <div class="skills fade-in">
         <div class="skills-content">
           <h2 id="skills">Some tools I use</h2>
           <div class="skills-list">
@@ -219,58 +257,58 @@
             <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="blank" class="skill-logo">
               <img src="./assets/img/CSS3.png" alt="CSS3" />
             </a> -->
-            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank" class="skill-logo">
+            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank" class="skill-logo" data-tooltip="JavaScript - Langage de programmation principal">
               <img class="js" src="./assets/img/JS.png" alt="Javascript" />
             </a>
-            <a href="https://www.typescriptlang.org/" target="blank" class="skill-logo">
+            <a href="https://www.typescriptlang.org/" target="blank" class="skill-logo" data-tooltip="TypeScript - JavaScript typé">
               <img src="./assets/img/TS.png" alt="Typescript" />
             </a>
             <!-- <a href="https://sass-lang.com/" target="blank" class="skill-logo">
               <img src="./assets/img/Sass.png" alt="Sass" />
             </a> -->
-            <a href="https://fr.react.dev/" target="blank" class="skill-logo">
+            <a href="https://fr.react.dev/" target="blank" class="skill-logo" data-tooltip="React - Bibliothèque JavaScript pour interfaces">
               <img src="./assets/img/React.png" alt="React and ReactNative" />
             </a>
-            <a href="https://nodejs.org/en" target="blank" class="skill-logo">
+            <a href="https://nodejs.org/en" target="blank" class="skill-logo" data-tooltip="Node.js - Runtime JavaScript côté serveur">
               <img src="./assets/img/Node.png" alt="Node.js" />
             </a>
-            <a href="https://nextjs.org/" target="blank" class="skill-logo">
+            <a href="https://nextjs.org/" target="blank" class="skill-logo" data-tooltip="Next.js - Framework React fullstack">
               <img src="./assets/img/next-short-removebg-preview.png" alt="Next.js" />
             </a>
-            <a href="https://tailwindcss.com/" target="blank" class="skill-logo">
+            <a href="https://tailwindcss.com/" target="blank" class="skill-logo" data-tooltip="Tailwind CSS - Framework CSS utilitaire">
               <img src="./assets/img/TailwindCSS.png" alt="Tailwind CSS" />
             </a>
-            <a href="https://greensock.com/gsap/" target="blank" class="skill-logo">
+            <a href="https://greensock.com/gsap/" target="blank" class="skill-logo" data-tooltip="GSAP - Animations JavaScript avancées">
               <img src="./assets/img/GSAP.png" alt="GreenSock" />
             </a>
-            <a href="https://nestjs.com/" target="blank" class="skill-logo">
+            <a href="https://nestjs.com/" target="blank" class="skill-logo" data-tooltip="NestJS - Framework Node.js pour APIs">
               <img src="./assets/img/nest-removebg-preview.png" alt="NestJs" />
             </a>
-            <a href="https://www.prisma.io/" target="blank" class="skill-logo">
+            <a href="https://www.prisma.io/" target="blank" class="skill-logo" data-tooltip="Prisma - ORM moderne pour bases de données">
               <img src="./assets/img/prisma-removebg-preview.png" alt="Prisma" />
             </a>
-            <a href="https://www.mysql.com/fr/" target="blank" class="skill-logo">
+            <a href="https://www.mysql.com/fr/" target="blank" class="skill-logo" data-tooltip="MySQL - Base de données relationnelle">
               <img src="./assets/img/mysql-removebg-preview.png" alt="MySql" />
             </a>
-            <a href="https://www.mongodb.com/fr-fr" target="blank" class="skill-logo">
+            <a href="https://www.mongodb.com/fr-fr" target="blank" class="skill-logo" data-tooltip="MongoDB - Base de données NoSQL">
               <img src="./assets/img/MongoDB.png" alt="Mongo DB" />
             </a>
-            <a href="https://git-scm.com/" target="blank" class="skill-logo">
+            <a href="https://git-scm.com/" target="blank" class="skill-logo" data-tooltip="Git - Contrôle de version">
               <img src="./assets/img/Git.png" alt="Git" />
             </a>
-            <a href="https://github.com/" target="blank" class="skill-logo">
+            <a href="https://github.com/" target="blank" class="skill-logo" data-tooltip="GitHub - Plateforme de développement">
               <img src="./assets/img/GitHub.png" alt="GitHub" />
             </a>
-            <a href="https://code.visualstudio.com/" target="blank" class="skill-logo">
+            <a href="https://code.visualstudio.com/" target="blank" class="skill-logo" data-tooltip="VS Code - Éditeur de code">
               <img src="./assets/img/VSCode.png" alt="VS Code" />
             </a>
-            <a href="https://www.docker.com/" target="blank" class="skill-logo">
+            <a href="https://www.docker.com/" target="blank" class="skill-logo" data-tooltip="Docker - Conteneurisation">
               <img src="./assets/img/png-transparent-docker-hd-logo-thumbnail-removebg-preview(1).png" alt="Docker" />
             </a>
           </div>
         </div>
       </div>
-      <div class="projects">
+      <div class="projects fade-in">
         <div class="projects-content">
           <h2 id="work">My favorite projects</h2>
           <nav class="projects-nav">
@@ -283,7 +321,7 @@
           </nav>
 
           <div class="projects-line"><span id="line"><span></div>
-            <h3>All my projects are hosted on open source or free solutions, please let me know if some links are broken </h2>
+            <h3 class="italic">All my projects are hosted on open source or free solutions, please let me know if some links are broken </h3>
             <br/> <br/>
           <div class="projects-grid">
             <div class="project-card managevent-card" id="managevent-card">
@@ -462,7 +500,7 @@
           </div>
         </div>
       </div>
-      <div class="contact">
+      <div class="contact fade-in">
         <h2 id="contact">Contact</h2>
         <p>Leave me a message !</p>
         <div class="mail">
@@ -490,6 +528,7 @@
   <script src="./assets/js/burger_toggle.js"></script>
   <script src="./assets/js/close_navbar.js"></script>
   <script src="./assets/js/timeline.js"></script>
+  <script src="./assets/js/enhanced-interactions.js"></script>
   <script src="https://kit.fontawesome.com/6fe71acdbb.js" crossorigin="anonymous"></script>
 </body>
 
