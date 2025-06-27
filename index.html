@@ -139,7 +139,7 @@
           <p data-i18n="journey.solving.description">
             Designed and developed an MVP for a medical device web application.
           </p>
-          <ul>
+          <ul data-i18n="journey.solving.list">
             <li>Fullstack project: React, Flask, PostgreSQL</li>
             <li>Clean architecture & secure authentication</li>
             <li>Multi-user types & dashboards</li>
@@ -155,13 +155,12 @@
           <p data-i18n="journey.freelance.description">
             CRM redesign project for a law firm.
           </p>
-          <ul>
+          <ul data-i18n="journey.freelance.list">
             <li>React frontend development from provided mockups</li>
             <li>Authentication forms and user management</li>
             <li>Multiple page development and routing</li>
             <li>API integration and backend connectivity</li>
             <li>Responsive design and UX optimization</li>
-            <li>2-month intensive development mission</li>
           </ul>
         </div>
         <div class="box b3">
@@ -172,7 +171,7 @@
           <p data-i18n="journey.alt.description">
             Joined &lt; ALT /> to develop my skills in a professional environment.
           </p>
-          <ul>
+          <ul data-i18n="journey.alt.list">
             <li>React, NestJS, clean code practices</li>
             <li>Database optimization & system architecture</li>
             <li>Microservices development</li>
@@ -189,7 +188,7 @@
           <p data-i18n="journey.reacteur.description">
             Career change bootcamp - intensive coding training program.
           </p>
-          <ul>
+          <ul data-i18n="journey.reacteur.list">
             <li>Front-end and back-end development</li>
             <li>Web and Mobile development</li>
             <li>MERN stack (React, Node, Express, MongoDB)</li>
@@ -205,7 +204,7 @@
           <p data-i18n="journey.self_taught.description">
             During parental leave, I invested in continuous learning through online platforms:
           </p>
-          <ul>
+          <ul data-i18n="journey.self_taught.list">
              <li>
               <span>Dyma :</span> Linux, Git and Docker certifications
             </li>
@@ -217,7 +216,7 @@
             </li>
             <li><span>NextReact :</span> Typescript, Next.JS, testing</li>
           </ul>
-          <p>
+          <p data-i18n="journey.self_taught.additional">
             Also followed free courses from "FreeCodeCamp" and "OpenClassRoom".
           </p>
         </div>
@@ -229,7 +228,7 @@
           <p data-i18n="journey.vet.description">
             10 years as a small animal veterinarian in various clinics.
           </p>
-          <ul>
+          <ul data-i18n="journey.vet.list">
             <li>Strong problem-solving skills</li>
             <li>Complex knowledge communication</li>
             <li>Daily client/team collaboration</li>
@@ -242,7 +241,7 @@
             <h3 data-i18n="journey.academic.title">Academic Background</h3>
             <img class="logo" src=".\assets\img\ENVT-logo.jpg" alt="" />
           </div>
-          <ul>
+          <ul data-i18n="journey.academic.list">
             <li>
               <span>Veterinary PhD (2012)</span><br />
               Ecole Nationale Vétérinaire de Toulouse
@@ -330,14 +329,28 @@
         <div class="projects-content">
           <h2 id="work" data-i18n="projects.title">My Projects</h2>
           <nav class="projects-nav">
-            <a class="projects-nav" href="#work" data-i18n="projects.all_projects">All projects</a>
-            <a class="projects-nav solving" href="#solving-card">Solving</a>
-            <a class="projects-nav actioneo" href="#actioneo-card">Actioneo</a>
-            <a class="projects-nav managevent" href="#managevent-card">ManagEvent</a>
-            <a class="projects-nav marvel" href="#marvel-card">Marvel</a>
-            <a class="projects-nav vinted" href="#vinted-card">Vinted</a>
-            <a class="projects-nav tellmemore" href="#tellmemore-card">TellMeMore</a>
-            <a class="projects-nav portfolio" href="#portfolio-card">Portfolio</a>
+            <div class="projects-select-container">
+              <select class="projects-select" id="projects-select">
+                <option value="all" data-i18n="projects.all_projects">All projects</option>
+                <option value="solving" data-i18n="projects.solving.title">Solving</option>
+                <option value="actioneo" data-i18n="projects.actioneo.title">Actioneo</option>
+                <option value="managevent" data-i18n="projects.managevent.title">ManagEvent</option>
+                <option value="marvel" data-i18n="projects.marvel.title">Marvel</option>
+                <option value="vinted" data-i18n="projects.vinted.title">Vinted</option>
+                <option value="tellmemore" data-i18n="projects.tellmemore.title">TellMeMore</option>
+                <option value="portfolio" data-i18n="projects.portfolio.title">Portfolio</option>
+              </select>
+            </div>
+            <div class="projects-nav-desktop">
+              <a class="projects-nav" href="#work" data-i18n="projects.all_projects">All projects</a>
+              <a class="projects-nav solving" href="#solving-card">Solving</a>
+              <a class="projects-nav actioneo" href="#actioneo-card">Actioneo</a>
+              <a class="projects-nav managevent" href="#managevent-card">ManagEvent</a>
+              <a class="projects-nav marvel" href="#marvel-card">Marvel</a>
+              <a class="projects-nav vinted" href="#vinted-card">Vinted</a>
+              <a class="projects-nav tellmemore" href="#tellmemore-card">TellMeMore</a>
+              <a class="projects-nav portfolio" href="#portfolio-card">Portfolio</a>
+            </div>
           </nav>
 
           <div class="projects-line"><span id="line"><span></div>
@@ -351,22 +364,22 @@
               <div class="card-logo"></div>
               <div class="card-bottom">
                 <div class="title-content">
-                  <h4>Solving Company</h4>
+                  <h4 data-i18n="projects.solving.title">Solving Company</h4>
                   <ul>
                     <li>
-                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Medical application for oncology centers</span>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span data-i18n="projects.solving.type">Medical application for oncology centers</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Fullstack development: autonomous frontend work and backend features after learning Python. Node-based interface for genograms</span>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span data-i18n="projects.solving.description">Fullstack development: autonomous frontend work and backend features after learning Python. Node-based interface for genograms</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, ReactFlow, Python,Flask, PostgreSQL</span>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span data-i18n="projects.solving.tech">React, ReactFlow, Python,Flask, PostgreSQL</span>
                     </li>
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Private (Demo on request)</p>
-                  <button class="screenshots-btn" id="solving-screenshots-btn">
+                  <p data-i18n="projects.private">Private (Demo on request)</p>
+                  <button class="screenshots-btn" id="solving-screenshots-btn" data-i18n="projects.screenshots">
                     <i class="fa-solid fa-images"></i> Screenshots
                   </button>
                 </div>
@@ -379,22 +392,22 @@
               <div class="card-logo"></div>
               <div class="card-bottom">
                 <div class="title-content">
-                  <h4>Actioneo</h4>
+                  <h4 data-i18n="projects.actioneo.title">Actioneo</h4>
                   <ul>
                     <li>
-                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>CRM redesign for law firm</span>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span data-i18n="projects.actioneo.type">CRM redesign for law firm</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Frontend development focused on configuration and client management modules. Cache management</span>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span data-i18n="projects.actioneo.description">Frontend development focused on configuration and client management modules. Cache management</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Tailwind, MUI, TanStackQuery, Zod</span>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span data-i18n="projects.actioneo.tech">React, Tailwind, MUI, TanStackQuery, Zod</span>
                     </li>
                   </ul>
                 </div>
                 <div class="link">
-                  <p>Private (Demo on request)</p>
-                  <button class="screenshots-btn" id="actioneo-screenshots-btn">
+                  <p data-i18n="projects.private">Private (Demo on request)</p>
+                  <button class="screenshots-btn" id="actioneo-screenshots-btn" data-i18n="projects.screenshots">
                     <i class="fa-solid fa-images"></i> Screenshots
                   </button>
                 </div>
@@ -407,29 +420,24 @@
               <div class="card-logo"></div>
               <div class="card-bottom">
                 <div class="title-content">
-                  <h4>ManagEvent</h4>
+                  <h4 data-i18n="projects.managevent.title">ManagEvent</h4>
                   <ul>
                     <li>
-                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Web SPA - Volunteers handling for associations</span>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span data-i18n="projects.managevent.type">Web SPA - Volunteers handling for associations</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Created from scratch in a team of 5 developers. Currently adapting it for my local association with AWS EC2 deployment</span>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span data-i18n="projects.managevent.description">Created from scratch in a team of 5 developers. Currently adapting it for my local association with AWS EC2 deployment</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Nest, Prisma, PostgreSql
-                        </span>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span data-i18n="projects.managevent.tech">React, Nest, Prisma, PostgreSql</span>
                     </li>
                   </ul>
                 </div>
                 <div class="link">
-                  <a class=""
-                  href="https://github.com/Pops47/managevent_frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
-                  <a class=""
-                  href="https://github.com/Pops47/managevent_backend" target="_blank"><i class="fa-brands fa-github"></i> Back</a>
-                  <a class=""
-                    href="https://manageventbackend-production.up.railway.app/apiDoc" target="_blank">Swagger API doc</a>
-                  <a class=""
-                    href="https://managevent.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a class="" href="https://github.com/Pops47/managevent_frontend" target="_blank" data-i18n="projects.front"><i class="fa-brands fa-github"></i> Front</a>
+                  <a class="" href="https://github.com/Pops47/managevent_backend" target="_blank" data-i18n="projects.back"><i class="fa-brands fa-github"></i> Back</a>
+                  <a class="" href="https://manageventbackend-production.up.railway.app/apiDoc" target="_blank" data-i18n="projects.swagger"><i class="fa-solid fa-book"></i> Swagger API doc</a>
+                  <a class="" href="https://managevent.netlify.app/" target="_blank" data-i18n="projects.link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
                 </div>
               </div>
             </div>
@@ -440,28 +448,23 @@
               <div class="card-logo"></div>
               <div class="card-bottom">
                 <div class="title-content">
-                  <h4>Marvel API</h4>
+                  <h4 data-i18n="projects.marvel.title">Marvel API</h4>
                   <ul>
                     <li>
-                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Website displaying your favorite
-                        comics and
-                        characters</span>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span data-i18n="projects.marvel.type">Website displaying your favorite comics and characters</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Display characters and comics, search bar, pagination, save favorites, external API integration</span>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span data-i18n="projects.marvel.description">Display characters and comics, search bar, pagination, save favorites, external API</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Node/Express</span>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span data-i18n="projects.marvel.tech">React, Node/Express</span>
                     </li>
                   </ul>
                 </div>
                 <div class="link">
-                  <a class=""
-                  href="https://github.com/Pops47/marvel-frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
-                  <a class=""
-                  href="https://github.com/Pops47/marvel-backend" target="_blank"><i class="fa-brands fa-github"></i> Back</a>
-                  <a class=""
-                    href="https://marvel-technical-test.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a class="" href="https://github.com/Pops47/marvel-frontend" target="_blank" data-i18n="projects.front"><i class="fa-brands fa-github"></i> Front</a>
+                  <a class="" href="https://github.com/Pops47/marvel-backend" target="_blank" data-i18n="projects.back"><i class="fa-brands fa-github"></i> Back</a>
+                  <a class="" href="https://marvel-technical-test.netlify.app/" target="_blank" data-i18n="projects.link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
                 </div>
               </div>
             </div>
@@ -472,28 +475,23 @@
               <div class="card-logo"></div>
               <div class="card-bottom">
                 <div class="title-content">
-                  <h4>VINTED CLONE</h4>
+                  <h4 data-i18n="projects.vinted.title">VINTED CLONE</h4>
                   <ul>
                     <li>
-                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>A clone of the famous e-commerce website</span>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span data-i18n="projects.vinted.type">A clone of the famous e-commerce website</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Frontend integration, authentication, search bar, article selling, cart
-                        system, payment processing</span>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span data-i18n="projects.vinted.description">Frontend integration, authentication, search bar, article selling, cart system, payment processing</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Node/Express, CRUD API,
-                        Stripe</span>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span data-i18n="projects.vinted.tech">React, Node/Express, CRUD API, Stripe</span>
                     </li>
                   </ul>
                 </div>
                 <div class="link">
-                  <a class=""
-                  href="https://github.com/Pops47/vinted-frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
-                  <a class=""
-                  href="https://github.com/Pops47/vinted-backend" target="_blank"><i class="fa-brands fa-github"></i> Back</a>
-                  <a class=""
-                    href="https://vinted-frontend-clone.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a class="" href="https://github.com/Pops47/vinted-frontend" target="_blank" data-i18n="projects.front"><i class="fa-brands fa-github"></i> Front</a>
+                  <a class="" href="https://github.com/Pops47/vinted-backend" target="_blank" data-i18n="projects.back"><i class="fa-brands fa-github"></i> Back</a>
+                  <a class="" href="https://vinted-frontend-clone.netlify.app/" target="_blank" data-i18n="projects.link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
                 </div>
               </div>
             </div>
@@ -504,29 +502,23 @@
               <div class="card-logo"></div>
               <div class="card-bottom">
                 <div class="title-content">
-                  <h4>TELL ME MORE</h4>
+                  <h4 data-i18n="projects.tellmemore.title">TELL ME MORE</h4>
                   <ul>
                     <li>
-                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Create, customize and answer
-                        questionnaires</span>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span data-i18n="projects.tellmemore.type">Create, customize and answer questionnaires</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Fullstack web app created for bootcamp
-                        certification,
-                      </span>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span data-i18n="projects.tellmemore.description">Fullstack web app created for bootcamp certification</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/reglages.png" alt="" /><span>React, Node/Express, MongoDB</span>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span data-i18n="projects.tellmemore.tech">React, Node/Express, MongoDB</span>
                     </li>
                   </ul>
                 </div>
                 <div class="link">
-                  <a class=""
-                  href="https://github.com/Pops47/tell-me-more-frontend" target="_blank"><i class="fa-brands fa-github"></i> Front</a>
-                  <a class=""
-                  href="https://github.com/Pops47/tell-me-more-backend" target="_blank"><i class="fa-brands fa-github"></i> Back</a>
-                  <a class=""
-                    href="https://tell-me-more-certif.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a class="" href="https://github.com/Pops47/tell-me-more-frontend" target="_blank" data-i18n="projects.front"><i class="fa-brands fa-github"></i> Front</a>
+                  <a class="" href="https://github.com/Pops47/tell-me-more-backend" target="_blank" data-i18n="projects.back"><i class="fa-brands fa-github"></i> Back</a>
+                  <a class="" href="https://tell-me-more-certif.netlify.app" target="_blank" data-i18n="projects.link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
                 </div>
               </div>
             </div>
@@ -538,31 +530,28 @@
               <div class="card-logo"></div>
               <div class="card-bottom">
                 <div class="title-content">
-                  <h4>My Portfolio</h4>
+                  <h4 data-i18n="projects.portfolio.title">My Portfolio</h4>
                   <ul>
                     <li>
-                      <img src="./assets/img/icons/etiquette.png" alt="" /><span>Design inspired by Welcome to the
-                        Jungle</span>
+                      <img src="./assets/img/icons/etiquette.png" alt="" /><span data-i18n="projects.portfolio.type">Design inspired by Welcome to the Jungle</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/etoile.png" alt="" /><span>Frontend integration, CSS animations,
-                        UX/UI design</span>
+                      <img src="./assets/img/icons/etoile.png" alt="" /><span data-i18n="projects.portfolio.description">Frontend integration, CSS animations, UX/UI design</span>
                     </li>
                     <li>
-                      <img src="./assets/img/icons/reglages.png" alt="" /><span>HTML5, CSS3, JS, Gsap</span>
+                      <img src="./assets/img/icons/reglages.png" alt="" /><span data-i18n="projects.portfolio.tech">HTML5, CSS3, JS, Gsap</span>
                     </li>
                   </ul>
                 </div>
                 <div class="link">
-                  <a class=""
-                  href="https://github.com/Pops47/portfolio-welcometothejungle" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a class="" href="https://github.com/Pops47/portfolio-welcometothejungle" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
                 </div>
               </div>
             </div>
             <div class="project-card to-continue">
-              <p>To be continued ...</p>
-              <h4>What's your next project ?</h4>
-              <a href="#contact"><button class="nav-btn-yellow">Contact me</button></a>
+              <p data-i18n="projects.next_project.title">To be continued ...</p>
+              <h4 data-i18n="projects.next_project.subtitle">What's your next project ?</h4>
+              <a href="#contact"><button class="nav-btn-yellow" data-i18n="projects.next_project.button">Contact me</button></a>
             </div>
           </div>
         </div>

@@ -892,7 +892,7 @@ main .projects .projects-grid {
 main .projects .project-card {
   height: 460px;
   width: calc(33% - 10px);
-  min-width: 350px;
+  min-width: 380px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -1316,6 +1316,20 @@ footer img:hover {
     align-items: center;
   }
 
+  .projects-select-container {
+    display: block;
+  }
+
+  .projects-nav-desktop {
+    display: none;
+  }
+
+  main .projects .project-card {
+    width: calc(50% - 10px);
+    min-width: 380px;
+    max-width: 380px;
+  }
+
   main .projects .projects-line span {
     width: 60px;
   }
@@ -1343,6 +1357,12 @@ footer img:hover {
 
   main .hero-section-title h1 {
     font-size: 1.8rem;
+  }
+
+  main .projects .project-card {
+    width: 100%;
+    min-width: 380px;
+    max-width: 380px;
   }
 }
 
@@ -1735,4 +1755,55 @@ footer img:hover {
   .flag {
     font-size: 18px;
   }
+}
+
+/* Styles pour le select des projets */
+.projects-select-container {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+}
+
+.projects-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  background: white;
+  border: 2px solid #ffcd00;
+  border-radius: 8px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.projects-select:hover {
+  border-color: #e6b800;
+  box-shadow: 0 2px 8px rgba(255, 205, 0, 0.2);
+}
+
+.projects-select:focus {
+  outline: none;
+  border-color: #ffcd00;
+  box-shadow: 0 0 0 3px rgba(255, 205, 0, 0.1);
+}
+
+.projects-select option {
+  padding: 8px;
+  font-weight: 500;
+}
+
+.projects-nav-desktop {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }

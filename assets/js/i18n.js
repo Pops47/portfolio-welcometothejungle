@@ -20,29 +20,78 @@ const translations = {
       solving: {
         title: "Stage chez Solving Company",
         description: "Conception et développement d'un MVP pour une application web de dispositif médical.",
+        list: [
+          "Projet fullstack : React, Flask, PostgreSQL",
+          "Authentification sécurisée, gestion de données médicales",
+          "Création de dashboards pour plusieurs types d'utilisateurs",
+          "Interface ReactFlow pour arbres généalogiques médicaux",
+          "CRUD backend et intégration de 2 API externes",
+          "Clean Architecture",
+        ],
       },
       freelance: {
         title: "Freelancing dans une agence web",
         description: "Projet de refonte CRM pour un cabinet d'avocats.",
+        list: [
+          "Développement frontend React à partir de maquettes fournies",
+          "Formulaires d'authentification et gestion des utilisateurs",
+          "Développement de pages, routage",
+          "Intégration API et connectivité backend",
+          "Design responsive et optimisation UX",
+        ],
       },
       alt: {
         title: "Incubateur Tech",
-        description: "Rejointe &lt; ALT /> pour développer mes compétences en environnement professionnel.",
+        description: "J'ai rejoint &lt; ALT /> pour développer mes compétences en environnement professionnel.",
+        list: [
+          "Optimisation de base de données et architecture système",
+          "Développement de microservices",
+          "Création d'une SPA fullstack pour la gestion de bénévoles",
+          "Stack : React, NestJS, MySQL",
+          "Équipe de 5 développeurs utilisant la méthodologie Kanban",
+          "Implémentation GitLab CI/CD",
+        ],
       },
       reacteur: {
         title: "Le Reacteur",
         description: "Bootcamp de reconversion - formation intensive en programmation.",
+        list: [
+          "Développement front-end et back-end",
+          "Développement Web et Mobile",
+          "Stack MERN (React, Node, Express, MongoDB)",
+          "Utilisation quotidienne de Git/GitHub",
+          "Méthodologie Agile pour projets d'équipe",
+        ],
       },
       self_taught: {
         title: "Formation autodidacte",
         description: "Pendant mon congé parental, j'ai investi dans l'apprentissage continu via des plateformes en ligne :",
+        list: [
+          "Dyma : Certifications Linux, Git et Docker",
+          "TheArenaProject : Shell, Système de fichiers, Algorithmes et Structures de données",
+          "'L'école du Web' : Javascript, React, Vue, Tailwind",
+          "NextReact : Typescript, Next.JS, tests",
+        ],
+        additional: "Aussi suivi des cours gratuits de 'FreeCodeCamp' et 'OpenClassRoom'.",
       },
       vet: {
         title: "Expériences professionnelles",
         description: "10 ans en tant que vétérinaire pour petits animaux dans diverses cliniques.",
+        list: [
+          "Compétences solides en résolution de problèmes",
+          "Vulgarisation de connaissances à tout type de public",
+          "Collaboration quotidienne client/équipe",
+          "Professionnelle adaptable et autonome",
+          "Résistante au stress dans des situations difficiles",
+        ],
       },
       academic: {
         title: "Formation académique",
+        list: [
+          "Doctorat vétérinaire (2012)<br />École Nationale Vétérinaire de Toulouse",
+          "Classe préparatoire Biologie (BCPST)<br />Lycée Fermat - Toulouse",
+          "Baccalauréat Scientifique<br />Lycée Théophile Gautier - Tarbes",
+        ],
       },
     },
     skills: {
@@ -51,7 +100,60 @@ const translations = {
     projects: {
       title: "Mes projets",
       all_projects: "Tous les projets",
-      note: "Tous mes projets sont hébergés sur des plateformes open-source ou gratuites. Merci de me signaler si des liens sont cassés.",
+      note: "La plupart de mes projets sont hébergés sur des plateformes gratuites. Merci de me signaler si des liens sont cassés.",
+      front: "Front",
+      back: "Back",
+      screenshots: "Visuels",
+      swagger: "Doc Swagger",
+      private: "Privé (démo sur demande)",
+      link: "Lien",
+      solving: {
+        title: "Solving Company",
+        type: "Application médicale pour centres d'oncologie",
+        description: "Développement front complet en autonomie. Back : ajout de features et résolution de bugs",
+        tech: "React, ReactFlow, Python, Flask, PostgreSQL",
+      },
+      actioneo: {
+        title: "Actioneo",
+        type: "Refonte du CRM d'un cabinet d'avocats",
+        description: "Développement frontend axé de la partie configuration et de toutes les vues des fiches clients. Gestion du cache",
+        tech: "React, Tailwind, MUI, TanStackQuery, Zod",
+      },
+      managevent: {
+        title: "ManagEvent",
+        type: "SPA gestion d'événements pour associations",
+        description: "Travail en équipe de 5 développeurs en méthodes agiles. CI/CD, Docker, déploiement serveur OVH et AWS EC2",
+        tech: "React, Nest, Prisma, PostgreSQL",
+      },
+      marvel: {
+        title: "Marvel API",
+        type: "Site web affichant vos comics et personnages préférés",
+        description: "Création des pages, barre de recherche, pagination, sauvegarde des favoris, API externe",
+        tech: "React, Node/Express",
+      },
+      vinted: {
+        title: "VINTED CLONE",
+        type: "Un clone du célèbre site e-commerce",
+        description: "Intégration frontend, authentification, barre de recherche, vente d'articles, système de panier, traitement des paiements",
+        tech: "React, Node/Express, API CRUD, Stripe",
+      },
+      tellmemore: {
+        title: "TELL ME MORE",
+        type: "Créer, personnaliser et répondre à des questionnaires",
+        description: "Application web fullstack créée pour la certification du bootcamp",
+        tech: "React, Node/Express, MongoDB",
+      },
+      portfolio: {
+        title: "Mon Portfolio",
+        type: "Design inspiré de Welcome to the Jungle",
+        description: "Intégration frontend, animations CSS, design UX/UI",
+        tech: "HTML5, CSS3, JS, GSAP",
+      },
+      next_project: {
+        title: "À suivre...",
+        subtitle: "Vous avez un projet ?",
+        button: "Contactez-moi",
+      },
     },
     contact: {
       title: "Contact",
@@ -81,38 +183,141 @@ const translations = {
       solving: {
         title: "Internship at Solving Company",
         description: "Designed and developed an MVP for a medical device web application.",
+        list: [
+          "Fullstack project: React, Flask, PostgreSQL",
+          "Clean architecture and secure authentication",
+          "Multiple user types and dashboards",
+          "Consultation scheduling system",
+          "ReactFlow interface for medical family trees",
+          "Medical pedigrees visualization for doctors",
+        ],
       },
       freelance: {
         title: "Freelancing in a web agency",
         description: "CRM redesign project for a law firm.",
+        list: [
+          "Frontend development from provided mockups",
+          "Authentication forms and user management",
+          "Multi-page development and routing",
+          "API integration and backend connectivity",
+          "Responsive design and UX optimization",
+          "2-month intensive development mission",
+        ],
       },
       alt: {
         title: "Tech Incubator",
         description: "Joined &lt; ALT /> to develop my skills in a professional environment.",
+        list: [
+          "React, NestJS, clean code practices",
+          "Database optimization and system architecture",
+          "Microservices development",
+          "Fullstack SPA creation for volunteer management",
+          "5-developer team using Kanban methodology",
+          "GitLab CI/CD implementation",
+        ],
       },
       reacteur: {
         title: "Le Reacteur",
         description: "Career change bootcamp - intensive coding training program.",
+        list: [
+          "Front-end and back-end development",
+          "Web and Mobile development",
+          "MERN stack (React, Node, Express, MongoDB)",
+          "Daily Git/GitHub usage",
+          "Agile methodology for team projects",
+        ],
       },
       self_taught: {
         title: "Self-taught education",
         description: "During parental leave, I invested in continuous learning through online platforms:",
+        list: [
+          "Dyma: Linux, Git, and Docker certifications",
+          "TheArenaProject: Shell, File System, Algorithms, and Data Structures",
+          "'The Web School': Javascript, React, Vue, Tailwind",
+          "NextReact: Typescript, Next.JS, tests",
+        ],
+        additional: "Also followed free courses from 'FreeCodeCamp' and 'OpenClassRoom'.",
       },
       vet: {
         title: "Professional experiences",
         description: "10 years as a small animal veterinarian in various clinics.",
+        list: [
+          "Solid problem-solving skills",
+          "Complex knowledge communication",
+          "Daily client/team collaboration",
+          "Adaptable and autonomous professional",
+          "Resistant to stress in difficult situations",
+        ],
       },
       academic: {
         title: "Academic Background",
+        list: [
+          "Veterinary Doctorate (2012)<br />Toulouse National Veterinary School",
+          "Preparatory Biology Class (BCPST)<br />Fermat High School - Toulouse",
+          "Scientific Baccalaureate<br />Théophile Gautier High School - Tarbes",
+        ],
       },
     },
     skills: {
       title: "My Tech Stack",
     },
     projects: {
-      title: "Featured Projects",
+      title: "My Projects",
       all_projects: "All projects",
-      note: "All my projects are hosted on open-source or free platforms. Please let me know if any links are broken.",
+      note: "Most of my projects are hosted on free platforms. Please let me know if any links are broken.",
+      front: "Front",
+      back: "Back",
+      screenshots: "Screenshots",
+      swagger: "Swagger API doc",
+      private: "Private (Demo on request)",
+      link: "Link",
+      solving: {
+        title: "Solving Company",
+        type: "Medical application for oncology centers",
+        description: "Fullstack development: autonomous frontend work and backend functionalities after learning Python. Node interface for gengams",
+        tech: "React, ReactFlow, Python, Flask, PostgreSQL",
+      },
+      actioneo: {
+        title: "Actioneo",
+        type: "CRM redesign project for a law firm",
+        description: "Frontend development focused on configuration and client management modules. Cache management",
+        tech: "React, Tailwind, MUI, TanStackQuery, Zod",
+      },
+      managevent: {
+        title: "ManagEvent",
+        type: "Web SPA - Volunteer management for associations",
+        description: "Created from scratch in a team of 5 developers. Currently in adaptation for my local association with AWS EC2 deployment",
+        tech: "React, Nest, Prisma, PostgreSQL",
+      },
+      marvel: {
+        title: "Marvel API",
+        type: "Website displaying your favorite comics and characters",
+        description: "Character and comic display, search bar, pagination, favorite saving, external API",
+        tech: "React, Node/Express",
+      },
+      vinted: {
+        title: "VINTED CLONE",
+        type: "A clone of the famous e-commerce site",
+        description: "Frontend integration, authentication, search bar, article sale, shopping cart system, payment processing",
+        tech: "React, Node/Express, API CRUD, Stripe",
+      },
+      tellmemore: {
+        title: "TELL ME MORE",
+        type: "Create, customize, and respond to questionnaires",
+        description: "Web fullstack application created for the bootcamp certification",
+        tech: "React, Node/Express, MongoDB",
+      },
+      portfolio: {
+        title: "My Portfolio",
+        type: "Design inspired by Welcome to the Jungle",
+        description: "Frontend integration, CSS animations, UX/UI design",
+        tech: "HTML5, CSS3, JS, GSAP",
+      },
+      next_project: {
+        title: "To be continued...",
+        subtitle: "What's your next project?",
+        button: "Contact me",
+      },
     },
     contact: {
       title: "Contact",
@@ -154,7 +359,28 @@ function changeLanguage(lang) {
     }
 
     if (typeof translation === "string") {
-      element.innerHTML = translation;
+      // Pour les boutons avec icônes, préserver l'icône
+      if (element.classList.contains("screenshots-btn") || (element.tagName === "A" && element.querySelector("i"))) {
+        const icon = element.querySelector("i");
+        if (icon) {
+          element.innerHTML = icon.outerHTML + " " + translation;
+        } else {
+          element.innerHTML = translation;
+        }
+      } else if (element.tagName === "OPTION") {
+        // Pour les options du select, ne changer que le texte
+        element.textContent = translation;
+      } else {
+        element.innerHTML = translation;
+      }
+    } else if (Array.isArray(translation)) {
+      // Gestion des listes
+      const listItems = element.querySelectorAll("li");
+      translation.forEach((item, index) => {
+        if (listItems[index]) {
+          listItems[index].innerHTML = item;
+        }
+      });
     }
   });
 
@@ -176,4 +402,34 @@ document.addEventListener("DOMContentLoaded", function () {
       changeLanguage(newLang);
     });
   });
+
+  // Gestion du select des projets
+  const projectsSelect = document.getElementById("projects-select");
+  if (projectsSelect) {
+    projectsSelect.addEventListener("change", function () {
+      const selectedValue = this.value;
+      const projectCards = document.querySelectorAll(".project-card");
+
+      // Retirer toutes les classes filtered et selected
+      projectCards.forEach((card) => {
+        card.classList.remove("filtered", "selected");
+      });
+
+      // Si "all" est sélectionné, afficher tous les projets
+      if (selectedValue === "all") {
+        projectCards.forEach((card) => {
+          card.classList.add("selected");
+        });
+      } else {
+        // Filtrer les projets
+        projectCards.forEach((card) => {
+          if (card.classList.contains(selectedValue + "-card")) {
+            card.classList.add("selected");
+          } else {
+            card.classList.add("filtered");
+          }
+        });
+      }
+    });
+  }
 });
