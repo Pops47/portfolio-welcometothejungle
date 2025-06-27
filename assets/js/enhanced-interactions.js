@@ -140,24 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Animation du header au scroll
-  let lastScrollTop = 0;
-  const header = document.querySelector("header");
-
-  window.addEventListener("scroll", function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop && scrollTop > 100) {
-      // Scroll vers le bas
-      header.style.transform = "translateY(-100%)";
-    } else {
-      // Scroll vers le haut
-      header.style.transform = "translateY(0)";
-    }
-
-    lastScrollTop = scrollTop;
-  });
-
   // Animation des liens de navigation au hover
   navLinks.forEach((link) => {
     link.addEventListener("mouseenter", function () {

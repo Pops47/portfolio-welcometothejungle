@@ -27,7 +27,7 @@
 }
 
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 80px;
   scroll-behavior: smooth;
 }
 
@@ -50,18 +50,21 @@ a[disabled]:hover {
 header {
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 9999;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #e9e9e9;
   width: 100%;
+  height: 80px;
   transition: all 0.2s ease;
+  will-change: transform;
 }
 
 .header-content {
   width: calc(100% - 3rem);
   max-width: 75rem;
-  margin: 8px auto;
+  margin: 0 auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
