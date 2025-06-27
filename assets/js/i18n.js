@@ -30,7 +30,7 @@ const translations = {
         ],
       },
       freelance: {
-        title: "Freelancing dans une agence web",
+        title: "Freelance en agence web",
         description: "Projet de refonte CRM pour un cabinet d'avocats.",
         list: [
           "Développement frontend React à partir de maquettes fournies",
@@ -285,8 +285,8 @@ const translations = {
       },
       managevent: {
         title: "ManagEvent",
-        type: "Web SPA - Volunteer management for associations",
-        description: "Created from scratch in a team of 5 developers. Currently in adaptation for my local association with AWS EC2 deployment",
+        type: "Events management app for associations",
+        description: "Created from scratch in a team of 5 developers. CI/CD, Docker, deployment server OVH and AWS EC2",
         tech: "React, Nest, Prisma, PostgreSQL",
       },
       marvel: {
