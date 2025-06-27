@@ -706,8 +706,6 @@ main .skill-logo img:hover {
   cursor: pointer;
   transform: scale(1.1);
   filter: brightness(1.1);
-  border-color: #ffcd00;
-  box-shadow: 0 8px 20px rgba(255, 205, 0, 0.3);
 }
 
 main .projects {
