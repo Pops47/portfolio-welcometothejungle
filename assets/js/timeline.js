@@ -140,7 +140,8 @@ gsap.set(".skill-logo", {
   y: 15,
 });
 
-// Animation des cartes de projets
+// Animation des cartes de projets - DÉSACTIVÉE pour éviter les conflits avec le filtrage
+/*
 gsap.to(".project-card", {
   scrollTrigger: {
     trigger: ".projects-grid",
@@ -160,6 +161,7 @@ gsap.set(".project-card", {
   opacity: 0,
   y: 20,
 });
+*/
 
 // Animation du titre principal
 gsap.to(".hero-section-title h1", {

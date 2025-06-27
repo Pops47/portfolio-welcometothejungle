@@ -794,8 +794,9 @@ main .projects .project-card {
   flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1;
 }
 
 main .projects .project-card:hover {
@@ -1198,4 +1199,22 @@ footer img:hover {
   main .hero-section-title h1 {
     font-size: 1.8rem;
   }
+}
+
+/* Classes pour le filtrage des projets */
+.project-card.filtered {
+  opacity: 0.3 !important;
+  transform: scale(0.95) !important;
+  transition: all 0.3s ease;
+}
+
+.project-card.selected {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  transition: all 0.3s ease;
+}
+
+/* Classe pour le texte en italique */
+.italic {
+  font-style: italic;
 }

@@ -28,6 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectFilters = document.querySelectorAll(".projects-nav a");
   const projectCards = document.querySelectorAll(".project-card");
 
+  // Fonction pour forcer l'application des styles
+  function forceOpacity(card, opacity, scale) {
+    card.style.setProperty("opacity", opacity, "important");
+    card.style.setProperty("transform", `scale(${scale})`, "important");
+  }
+
+  // Initialiser toutes les cartes comme visibles
+  projectCards.forEach((card) => {
+    forceOpacity(card, 1, 1);
+  });
+
   projectFilters.forEach((filter) => {
     filter.addEventListener("click", function (e) {
       e.preventDefault();
@@ -41,19 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
       projectCards.forEach((card) => {
         if (filterType === "work" || filterType === "") {
-          // Afficher tous les projets
-          card.style.display = "flex";
-          card.style.opacity = "1";
-          card.style.transform = "scale(1)";
+          // Afficher tous les projets avec opacité normale
+          forceOpacity(card, 1, 1);
         } else {
           // Filtrer par type de projet
-          if (card.classList.contains(filterType + "-card")) {
-            card.style.display = "flex";
-            card.style.opacity = "1";
-            card.style.transform = "scale(1)";
+          if (card.classList.contains(filterType)) {
+            // Carte correspondante : opacité normale
+            forceOpacity(card, 1, 1);
           } else {
-            card.style.opacity = "0.3";
-            card.style.transform = "scale(0.95)";
+            // Autres cartes : opacité réduite
+            forceOpacity(card, 0.3, 0.95);
           }
         }
       });
