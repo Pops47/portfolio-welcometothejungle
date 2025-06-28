@@ -110,19 +110,22 @@ const translations = {
       solving: {
         title: "Solving Company",
         type: "Application médicale pour centres d'oncologie",
-        description: "Développement front complet en autonomie. Back : ajout de features et résolution de bugs",
+        description:
+          "Développement front complet en autonomie. Ajout de features backend et résolution de bugs. Developpement d'une interface pour afficher les génogrammes",
         tech: "React, ReactFlow, Python, Flask, PostgreSQL",
       },
       actioneo: {
         title: "Actioneo",
         type: "Refonte du CRM d'un cabinet d'avocats",
-        description: "Développement frontend axé de la partie configuration et de toutes les vues des fiches clients. Gestion du cache",
+        description:
+          "Développement frontend de la partie configurations et de toutes les vues des fiches clients et des fiches entreprises. Formulaires complexes. Gestion du cache",
         tech: "React, Tailwind, MUI, TanStackQuery, Zod",
       },
       managevent: {
         title: "ManagEvent",
         type: "SPA gestion d'événements pour associations",
-        description: "Travail en équipe de 5 développeurs en méthodes agiles. CI/CD, Docker, déploiement serveur OVH et AWS EC2",
+        description:
+          "Travail en équipe de 5 développeurs, méthodes agiles. Système d'authentification JWT avec refresh token. Dockerization, GitLab CI/CD, déploiement sur serveur OVH et AWS EC2",
         tech: "React, Nest, Prisma, PostgreSQL",
       },
       marvel: {
@@ -274,19 +277,21 @@ const translations = {
       solving: {
         title: "Solving Company",
         type: "Medical application for oncology centers",
-        description: "Fullstack development: autonomous frontend work and backend functionalities after learning Python. Node interface for gengams",
+        description:
+          "Fullstack development: autonomously developed frontend, added backend functionalities after learning Python and Flask. Created family trees and genograms interface",
         tech: "React, ReactFlow, Python, Flask, PostgreSQL",
       },
       actioneo: {
         title: "Actioneo",
         type: "CRM redesign project for a law firm",
-        description: "Frontend development focused on configuration and client management modules. Cache management",
+        description: "Frontend development : worked on configuration and client files pages, implemented complex forms. Cache management",
         tech: "React, Tailwind, MUI, TanStackQuery, Zod",
       },
       managevent: {
         title: "ManagEvent",
         type: "Events management app for associations",
-        description: "Created from scratch in a team of 5 developers. CI/CD, Docker, deployment server OVH and AWS EC2",
+        description:
+          "Created from scratch in a team of 5 developers. Learned microservices comunication with Nats message broker. CI/CD, Docker, deployment on OVH server and AWS",
         tech: "React, Nest, Prisma, PostgreSQL",
       },
       marvel: {
