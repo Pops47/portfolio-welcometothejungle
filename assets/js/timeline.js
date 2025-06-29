@@ -1,10 +1,24 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// Animation initiale des boîtes - La première boîte est semi-transparente au chargement
+gsap.set([".b2", ".b3", ".b4", ".b5", ".b6", ".b7"], {
+  opacity: 0,
+  y: 20,
+  scale: 0.98,
+});
+
+// La première boîte commence avec une opacité réduite
+gsap.set(".b1", {
+  opacity: 0.3,
+  y: 10,
+  scale: 0.99,
+});
+
 // Animations améliorées pour la timeline
 gsap.to(".b1", {
   scrollTrigger: {
     trigger: ".b1",
-    start: "bottom bottom",
+    start: "top 80%",
     end: "top top",
     toggleActions: "play none none reverse",
   },
@@ -97,13 +111,6 @@ gsap.to(".b7", {
   ease: "power2.out",
   y: 0,
   scale: 1,
-});
-
-// Animation initiale des boîtes
-gsap.set([".b1", ".b2", ".b3", ".b4", ".b5", ".b6", ".b7"], {
-  opacity: 0,
-  y: 20,
-  scale: 0.98,
 });
 
 // Animation des points de la timeline
