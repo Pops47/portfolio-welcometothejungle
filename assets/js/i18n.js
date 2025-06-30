@@ -22,11 +22,11 @@ const translations = {
         description: "Conception et développement d'un MVP pour une application web de dispositif médical.",
         list: [
           "Projet fullstack : React, Flask, PostgreSQL",
-          "Authentification sécurisée, gestion de données médicales",
+          "Clean architecture, authentification sécurisée, gestion de données médicales",
           "Création de dashboards pour plusieurs types d'utilisateurs",
           "Interface ReactFlow pour arbres généalogiques médicaux",
-          "CRUD backend et intégration de 2 API externes",
-          "Clean Architecture",
+          "CRUD backend, résolution de bugs, et intégration de 2 API externes",
+          "Utilisation quotidienne de Cursor pour améliorer la productivité",
         ],
       },
       freelance: {
@@ -72,7 +72,7 @@ const translations = {
           "'L'école du Web' : Javascript, React, Vue, Tailwind",
           "NextReact : Typescript, Next.JS, tests",
         ],
-        additional: "Aussi suivi des cours gratuits de 'FreeCodeCamp' et 'OpenClassRoom'.",
+        additional: "Aussi suivi des cours gratuits de 'FreeCodeCamp' et 'OpenClassRoom' et participé à des communautés tech comme 'Pinqo' et 'GuildOpenTech'.",
       },
       vet: {
         title: "Expériences professionnelles",
@@ -114,12 +114,12 @@ const translations = {
           "Développement front complet en autonomie. Ajout de features backend et résolution de bugs. Developpement d'une interface pour afficher les génogrammes",
         tech: "React, ReactFlow, Python, Flask, PostgreSQL",
       },
-      actioneo: {
-        title: "Actioneo",
-        type: "Refonte du CRM d'un cabinet d'avocats",
+      marketplace: {
+        title: "MarketPlace",
+        type: "Marketplace de produits locaux",
         description:
-          "Développement frontend de la partie configurations et de toutes les vues des fiches clients et des fiches entreprises. Formulaires complexes. Gestion du cache",
-        tech: "React, Tailwind, MUI, TanStackQuery, Zod",
+          "Projet bénévole réalisé au sein de la communauté tech Pinqo. Participation à la conception, dockerisation et développement d'un CRUD backend pour les catégories de produits",
+        tech: "Java, Spring Boot, JPA, PostgreSQL, JUnit, Docker",
       },
       managevent: {
         title: "ManagEvent",
@@ -127,6 +127,13 @@ const translations = {
         description:
           "Travail en équipe de 5 développeurs, méthodes agiles. Système d'authentification JWT avec refresh token. Dockerization, GitLab CI/CD, déploiement sur serveur OVH et AWS EC2",
         tech: "React, Nest, Prisma, PostgreSQL",
+      },
+      actioneo: {
+        title: "Actioneo",
+        type: "Refonte du CRM d'un cabinet d'avocats",
+        description:
+          "Développement frontend de la partie configurations et de toutes les vues des fiches clients et des fiches entreprises. Formulaires complexes. Gestion du cache",
+        tech: "React, Tailwind, MUI, TanStackQuery, Zod",
       },
       marvel: {
         title: "Marvel API",
@@ -190,9 +197,9 @@ const translations = {
           "Fullstack project: React, Flask, PostgreSQL",
           "Clean architecture and secure authentication",
           "Multiple user types and dashboards",
-          "Consultation scheduling system",
+          "CRUD backend, bug resolution, and integration of 2 external APIs",
           "ReactFlow interface for medical family trees",
-          "Medical pedigrees visualization for doctors",
+          "Daily use of Cursor AI to improve productivity",
         ],
       },
       freelance: {
@@ -239,7 +246,8 @@ const translations = {
           "'The Web School': Javascript, React, Vue, Tailwind",
           "NextReact: Typescript, Next.JS, tests",
         ],
-        additional: "Also followed free courses from 'FreeCodeCamp' and 'OpenClassRoom'.",
+        additional:
+          "Also followed free courses from 'FreeCodeCamp' and 'OpenClassRoom' and participated in tech communities projects like 'Pinqo' and 'GuildOpenTech'.",
       },
       vet: {
         title: "Professional experiences",
@@ -281,11 +289,11 @@ const translations = {
           "Fullstack development: autonomously developed frontend, added backend functionalities after learning Python and Flask. Created family trees and genograms interface",
         tech: "React, ReactFlow, Python, Flask, PostgreSQL",
       },
-      actioneo: {
-        title: "Actioneo",
-        type: "CRM redesign project for a law firm",
-        description: "Frontend development : worked on configuration and client files pages, implemented complex forms. Cache management",
-        tech: "React, Tailwind, MUI, TanStackQuery, Zod",
+      marketplace: {
+        title: "MarketPlace",
+        type: "Local products marketplace",
+        description: "Volunteer project to practice within the Pinqo tech community. Design, dockerization and backend CRUD for product categories",
+        tech: "Java, Spring Boot, JPA, PostgreSQL, JUnit, Docker",
       },
       managevent: {
         title: "ManagEvent",
@@ -293,6 +301,12 @@ const translations = {
         description:
           "Created from scratch in a team of 5 developers. Learned microservices comunication with Nats message broker. CI/CD, Docker, deployment on OVH server and AWS",
         tech: "React, Nest, Prisma, PostgreSQL",
+      },
+      actioneo: {
+        title: "Actioneo",
+        type: "CRM redesign project for a law firm",
+        description: "Frontend development : worked on configuration and client files pages, implemented complex forms. Cache management",
+        tech: "React, Tailwind, MUI, TanStackQuery, Zod",
       },
       marvel: {
         title: "Marvel API",
