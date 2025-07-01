@@ -11,6 +11,7 @@ const translations = {
     },
     hero: {
       title: "Hello, je suis Pauline,<br />développeuse fullstack.<br />J'aime créer de nouvelles choses et apprendre chaque jour !",
+      subtitle: "Fun Fact : J'ai aussi été vétérinaire pendant une dizaine d'années !",
       discover_journey: "Découvrir mon parcours",
       check_toolbox: "Voir ma boîte à outils",
       discover_projects: "Exporer mes projets",
@@ -184,6 +185,7 @@ const translations = {
     },
     hero: {
       title: "Hi, I'm Pauline,<br />I'm a fullstack developer.<br />I love creating new things and learning every day!",
+      subtitle: "Fun Fact : I've also been a veterinarian for 10 years!",
       discover_journey: "Discover my journey",
       check_toolbox: "Check out my toolbox",
       discover_projects: "Discover my projects",

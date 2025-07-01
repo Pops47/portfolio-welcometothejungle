@@ -451,6 +451,17 @@ main .hero-section-title h1 {
   margin-bottom: 20px;
 }
 
+main .hero-section-title .hero-subtitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 30px;
+  letter-spacing: 0.02rem;
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
 main .hero-section-buttons {
   flex: 1;
   display: flex;
@@ -1257,6 +1268,11 @@ footer img:hover {
     font-size: 2.2rem;
   }
 
+  main .hero-section-title .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
   main .hero-section-buttons .button {
     width: 100%;
     max-width: 400px;
@@ -1357,6 +1373,11 @@ footer img:hover {
 
   main .hero-section-title h1 {
     font-size: 1.8rem;
+  }
+
+  main .hero-section-title .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
   }
 
   main .projects .project-card {
