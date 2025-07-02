@@ -119,8 +119,8 @@ const translations = {
         title: "MarketPlace",
         type: "Marketplace de produits locaux",
         description:
-          "Projet bénévole réalisé au sein de la communauté tech Pinqo. Participation à la conception, dockerisation et développement d'un CRUD backend pour les catégories de produits",
-        tech: "Java, Spring Boot, JPA, PostgreSQL, JUnit, Docker",
+          "Projet bénévole réalisé au sein de la communauté tech Pinqo. Conception, dockerisation et développement d'un CRUD pour les catégories de produits",
+        tech: "Java, Spring Boot, JPA, PostgreSQL, Docker",
       },
       managevent: {
         title: "ManagEvent",
