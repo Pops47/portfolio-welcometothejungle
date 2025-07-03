@@ -32,7 +32,7 @@ const translations = {
       },
       freelance: {
         title: "Freelance en agence web",
-        description: "Projet de refonte CRM pour un cabinet d'avocats.",
+        description: "Projet de refonte d'un CRM pour un cabinet d'avocats.",
         list: [
           "Développement frontend React à partir de maquettes fournies",
           "Formulaires d'authentification et gestion des utilisateurs",
@@ -45,12 +45,12 @@ const translations = {
         title: "Incubateur Tech",
         description: "J'ai rejoint &lt; ALT /> pour développer mes compétences en environnement professionnel.",
         list: [
-          "Optimisation de base de données et architecture système",
-          "Développement de microservices",
           "Création d'une SPA fullstack pour la gestion de bénévoles",
+          "Optimisation de base de données et architecture système",
+          "Développement de microservices, communication avec Nats",
           "Stack : React, NestJS, MySQL",
-          "Équipe de 5 développeurs utilisant la méthodologie Kanban",
-          "Implémentation GitLab CI/CD",
+          "Équipe de 5 développeurs, peer programming, méthode agile",
+          "Dockerisation et implémentation GitLab CI/CD",
         ],
       },
       reacteur: {
@@ -220,12 +220,12 @@ const translations = {
         title: "Tech Incubator",
         description: "Joined &lt; ALT /> to develop my skills in a professional environment.",
         list: [
+          "Fullstack SPA for volunteer management",
           "React, NestJS, clean code practices",
           "Database optimization and system architecture",
-          "Microservices development",
-          "Fullstack SPA creation for volunteer management",
-          "5-developer team using Kanban methodology",
-          "GitLab CI/CD implementation",
+          "Microservices development, communication with Nats",
+          "5-developer team, peer programming, agile methodology",
+          "Dockerization and GitLab CI/CD",
         ],
       },
       reacteur: {
