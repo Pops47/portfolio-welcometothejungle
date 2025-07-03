@@ -73,7 +73,7 @@ const translations = {
           "'L'école du Web' : Javascript, React, Vue, Tailwind",
           "NextReact : Typescript, Next.JS, tests",
         ],
-        additional: "Aussi suivi des cours gratuits de 'FreeCodeCamp' et 'OpenClassRoom' et participé à des communautés tech comme 'Pinqo' et 'GuildOpenTech'.",
+        additional: "Cours online 'FreeCodeCamp', 'OpenClassRoom'. Participation à des communautés tech comme 'Pinqo' et 'GuildOpenTech'.",
       },
       vet: {
         title: "Expériences professionnelles",
